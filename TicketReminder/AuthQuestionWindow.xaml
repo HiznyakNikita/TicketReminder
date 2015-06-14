@@ -1,0 +1,11 @@
+﻿<Window x:Class="TicketReminder.AuthQuestionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AuthQuestionWindow" Height="132.978" Width="310.638">
+    <Grid>
+        <Label Content="Пройти авторизацию на dprc.gov.ua" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAuth" Content="У меня есть аккаунт" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="125" Click="btnAuth_Click"/>
+        <Button x:Name="btnRegister" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="159,67,0,0" VerticalAlignment="Top" Width="135" Click="btnRegister_Click"/>
+
+    </Grid>
+</Window>
