@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DprcParser;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,28 +9,48 @@ namespace TicketReminder.DataClasses
 {
     public class Train
     {
-        public static List<Car> Cars { get; set; }
+        public List<Car> Cars = new List<Car>();
         public string Number { get; set; }
         public string Route { get; set; }
         public string Date { get; set; }
         public int PlacesCount { get; set; }
 
+        /// <summary>
+        /// Method for getting info about all trains by route from fromPlace to toPlace on date
+        /// </summary>
+        /// <param name="fromPlace">Place - start point of route</param>
+        /// <param name="toPlace">Place - end point of route</param>
+        /// <param name="date">Date of route</param>
+        /// <returns></returns>
         public static List<Train> GetAllTrainsByRouteInfo(string fromPlace, string toPlace, string date)
         {
             List<Train> trains = new List<Train>();
-            string[] trainsNumbers = DprcGovUaParser.GetTrainsNumbers(fromPlace, toPlace, date);
+            string[] trainsNumbers = Parser.GetTrainsNumbers(fromPlace, toPlace, date);
             for (int i = 0; i < trainsNumbers.Length; i++)
             {
-                trains.Add(DprcGovUaParser.GetAllTrainInfo(fromPlace, toPlace, date, trainsNumbers[i], i));
+                trains.Add(Parser.GetAllTrainInfo(fromPlace, toPlace, date, trainsNumbers[i], i));
             }
             return trains;
         }
 
+        /// <summary>
+        /// Method for getting all information about train
+        /// </summary>
+        /// <param name="fromPlace">Place - start point of route</param>
+        /// <param name="toPlace">Place - end point of route</param>
+        /// <param name="date">Date of route</param>
+        /// <param name="trainNumber">Train number on route</param>
+        /// <param name="trainIndexInList">Index of train in list that generates in runtime fro dprc server. Helper field.</param>
+        /// <returns></returns>
         public static Train GetAllTrainInfo(string fromPlace, string toPlace, string date, string trainNumber, int trainIndexInList)
         {
-            return DprcGovUaParser.GetAllTrainInfo(fromPlace, toPlace, date, trainNumber, trainIndexInList);
+            return Parser.GetAllTrainInfo(fromPlace, toPlace, date, trainNumber, trainIndexInList);
         }
 
+        /// <summary>
+        /// Get count of places at this train
+        /// </summary>
+        /// <returns>Places count</returns>
         public int GetPlacesCount()
         {
             int count = 0;
@@ -43,7 +64,12 @@ namespace TicketReminder.DataClasses
             return count;
         }
 
-        public static int GetCountPlacesByCarType(List<CarType> types)
+        /// <summary>
+        /// Get count of places at this train by car type
+        /// </summary>
+        /// <param name="types">car types(Luxe,Seat etc.)</param>
+        /// <returns>Count of places by current car types</returns>
+        public int GetCountPlacesByCarType(List<CarType> types)
         {
            int count = 0;
            foreach(var car in Cars)
@@ -57,7 +83,12 @@ namespace TicketReminder.DataClasses
            return count;
         }
 
-        public static int GetCountPlacesByPlaceType(List<PlaceType> types)
+        /// <summary>
+        /// Get count of places by place type
+        /// </summary>
+        /// <param name="types">Place types(normal high, side low, etc.)</param>
+        /// <returns>Count of places for current place types</returns>
+        public int GetCountPlacesByPlaceType(List<PlaceType> types)
         {
             int count = 0;
             foreach(var car in Cars)
