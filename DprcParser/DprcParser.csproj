@@ -50,6 +50,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataClasses\Car.cs" />
+    <Compile Include="DataClasses\CarInfo.cs" />
+    <Compile Include="DataClasses\CarType.cs" />
+    <Compile Include="DataClasses\PlaceType.cs" />
+    <Compile Include="DataClasses\Train.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
