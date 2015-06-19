@@ -6,6 +6,7 @@
         <Label Content="Пройти авторизацию на dprc.gov.ua" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnAuth" Content="У меня есть аккаунт" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="125" Click="btnAuth_Click"/>
         <Button x:Name="btnRegister" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="159,67,0,0" VerticalAlignment="Top" Width="135" Click="btnRegister_Click"/>
+        <WebBrowser x:Name="webBrowser1" HorizontalAlignment="Left" Height="26" Margin="194,41,0,0" VerticalAlignment="Top" Width="100"  Navigated="webBrowser1_Navigated"/>
 
     </Grid>
 </Window>

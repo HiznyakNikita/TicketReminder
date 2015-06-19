@@ -3,21 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="RegistrationWindow" Height="405.971" Width="335.523">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="113,55,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="23" Margin="113,55,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="98"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="113,23,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Height="23" Margin="113,23,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
         <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="98"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="113,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="tbSurname" HorizontalAlignment="Left" Height="23" Margin="113,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="98"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="113,167,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="tbTelephone" HorizontalAlignment="Left" Height="23" Margin="113,167,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
         <Label Content="Телефон" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="98"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="113,269,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="tbCaptcha" HorizontalAlignment="Left" Height="23" Margin="113,269,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="205"/>
         <Label Content="Captcha" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="113,117,0,0" VerticalAlignment="Top" Width="205" Height="19"/>
+        <PasswordBox x:Name="tbPassword" HorizontalAlignment="Left" Margin="113,117,0,0" VerticalAlignment="Top" Width="205" Height="19"/>
         <Label Content="Подтвердить" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="113,141,0,0" VerticalAlignment="Top" Width="205" Height="19"/>
-        <Image HorizontalAlignment="Left" Height="45" Margin="93,207,0,0" VerticalAlignment="Top" Width="136"/>
-        <Button Content="Подтвердить" HorizontalAlignment="Left" Margin="113,327,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click"/>
+        <PasswordBox x:Name="tbConfirmPassword" HorizontalAlignment="Left" Margin="113,141,0,0" VerticalAlignment="Top" Width="205" Height="19"/>
+        <Image x:Name="imgCaptcha" HorizontalAlignment="Left" Height="45" Margin="93,207,0,0" VerticalAlignment="Top" Width="136"/>
+        <Button x:Name="btnRegister" Content="Подтвердить" HorizontalAlignment="Left" Margin="113,327,0,0" VerticalAlignment="Top" Width="98" Click="btnRegister_Click"/>
     </Grid>
 </Window>

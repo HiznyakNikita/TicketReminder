@@ -18,7 +18,7 @@ namespace DprcParser
         static string currentInvoiceNumber = "";
 
         //GET request method
-        private static string GetHttp(string url, Encoding encoding)
+        public static string GetHttp(string url, Encoding encoding)
         {
             System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
             var reqGET = (HttpWebRequest)WebRequest.Create(url);
@@ -56,7 +56,7 @@ namespace DprcParser
         }
 
         //POST request method
-        private static string PostHttp(string url, string data)
+        public static string PostHttp(string url, string data)
         {
             ServicePointManager.Expect100Continue = false;
 
@@ -89,9 +89,9 @@ namespace DprcParser
         /// <param name="captcha">captcha value</param>
         public static void Registration(string email, string password, string confirmPassword, string name, string surname, string phone, string captcha)
         {
-            //NOT TESTED!!!
-            string url = "http://dprc.gov.ua";
-            string data = "email=" + email + "&password1=" + password + "&password2=" + confirmPassword + "&name1=" + name + "&name2=" + surname + "&phone=" + phone + "&captcha_value=" + captcha + "&do_submit=%D0%9F%D0%BE%D0%B4%D1%82%D0%B2%D0%B5%D1%80%D0%B4%D0%B8%D1%82%D1%8C";
+            //NOT TESTED!!! //NOT NEED IN TODAYS VERSION(REGISTRATION BY WEB BROWSER NOW)
+            string url = "http://dprc.gov.ua/register.php";
+            string data = "email=" + email + "&password1=" + password + "&password2=" + confirmPassword + "&name1=" + name + "&name2=" + surname + "&phone=" + phone + "&captcha_value=" + captcha + "&do_submit=Подтвердить";
             PostHttp(url, data);
         }
 
