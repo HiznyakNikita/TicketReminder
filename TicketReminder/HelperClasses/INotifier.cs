@@ -8,6 +8,6 @@ namespace TicketReminder.HelperClasses
 {
     public interface INotifier
     {
-        public void Notify() { }
+        void Notify();
     }
 }

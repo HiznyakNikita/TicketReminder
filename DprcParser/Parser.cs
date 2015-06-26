@@ -14,11 +14,11 @@ namespace DprcParser
 {
     public class Parser
     {
-        static CookieContainer cookies = new CookieContainer();
+        public static CookieContainer cookies = new CookieContainer();
         static string currentInvoiceNumber = "";
 
         //GET request method
-        public static string GetHttp(string url, Encoding encoding)
+        private static string GetHttp(string url, Encoding encoding)
         {
             System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
             var reqGET = (HttpWebRequest)WebRequest.Create(url);
@@ -56,7 +56,7 @@ namespace DprcParser
         }
 
         //POST request method
-        public static string PostHttp(string url, string data)
+        private static string PostHttp(string url, string data)
         {
             ServicePointManager.Expect100Continue = false;
 
@@ -227,16 +227,16 @@ namespace DprcParser
         private static CarInfo GetCarInfo(int trainNumberIdInList, HtmlAgilityPack.HtmlDocument PageGeneral)
         {
             //current train node
-            int nodeGuid1 = PageGeneral.DocumentNode.InnerText.IndexOf("window.trips_['" + trainNumberIdInList + "']");
+            int nodeGuid1 = PageGeneral.DocumentNode.InnerHtml.IndexOf("window.trips_['" + trainNumberIdInList + "']");
             //next train node. For getting id of html segment in document
-            int nodeGuid2 = PageGeneral.DocumentNode.InnerText.IndexOf("window.trips_['" + (trainNumberIdInList + 1).ToString() + "']");
+            int nodeGuid2 = PageGeneral.DocumentNode.InnerHtml.IndexOf("window.trips_['" + (trainNumberIdInList + 1).ToString() + "']");
             // parse next html code(need if train node is last in html document)
             int functionStringIndex = 0;
             CarInfo info = new CarInfo();
-            if (nodeGuid2 == 0)
+            if (nodeGuid2 == -1)
                 functionStringIndex = PageGeneral.DocumentNode.InnerText.IndexOf("function stip(a,b,c) {	show_trip_info_panel(a,(window.rw_tos!=-1?window.rw_tos:b),(window.rw_place!=-1?window.rw_place:c));");
             //getting info about html segment (need for form request string)
-            if (nodeGuid2 != 0)
+            if (nodeGuid2 != -1)
             {
                 string doc = PageGeneral.DocumentNode.InnerText.Substring(nodeGuid1 + 18 + trainNumberIdInList.ToString().Length, nodeGuid2 - (nodeGuid1 + 18 + trainNumberIdInList.ToString().Length + 2));
                 info = JsonConvert.DeserializeObject<CarInfo>(doc);
