@@ -71,6 +71,8 @@
     </Compile>
     <Compile Include="HelperClasses\EmailHelper.cs" />
     <Compile Include="HelperClasses\Helper.cs" />
+    <Compile Include="HelperClasses\INotifier.cs" />
+    <Compile Include="HelperClasses\MessageArgs.cs" />
     <Compile Include="HelperClasses\VkontakteHelper.cs" />
     <Compile Include="LogInWindow.xaml.cs">
       <DependentUpon>LogInWindow.xaml</DependentUpon>

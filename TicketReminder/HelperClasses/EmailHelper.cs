@@ -5,14 +5,30 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using TicketReminder.HelperClasses;
 
 namespace TicketReminder
 {
-    public class EmailHelper
+    public class EmailHelper : INotifier
     {
-        public static void SendMail(string password,
-            string mailto, string caption, string message)
+        private string password;
+        private string mailto;
+        private string caption;
+        private MessageArgs messageArgs;
+
+        public EmailHelper(string password,
+            string mailto, string caption, MessageArgs messageArgs)
         {
+            this.password = password;
+            this.mailto = mailto;
+            this.caption = caption;
+            this.messageArgs = messageArgs;
+        }
+
+        public static void SendMail(string password,
+            string mailto, string caption, MessageArgs args)
+        {
+            string message = CreateMessage(args); 
             try
             {
                 MailMessage mail = new MailMessage();
@@ -33,6 +49,16 @@ namespace TicketReminder
             {
                 throw new Exception("Mail.Send: " + e.Message);
             }
+        }
+
+        private static string CreateMessage(MessageArgs args) 
+        {
+            return args.From + " - " + args.To + " на " + args.Date + "Поезд: " + args.TrainNumber + " Количество мест: " + args.PlacesCount;
+        }
+
+        public void Notify()
+        {
+            SendMail(password, mailto, caption, messageArgs);
         }
     }
 }
