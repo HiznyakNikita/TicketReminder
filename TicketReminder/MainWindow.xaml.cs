@@ -51,7 +51,7 @@ namespace TicketReminder
             {
                 List<Train> trains = Train.GetAllTrainsByRouteInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()));
                 foreach (var train in trains)
-                    count += GetCountPlaces(train);
+                    //count += GetCountPlaces(train);
                 if (lastCount != count)
                 {
                     NotifyAllTrains(trains);
@@ -61,7 +61,7 @@ namespace TicketReminder
             else
             {
                 Train train = Train.GetAllTrainInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()), cmbBoxTrainNumber.Text, cmbBoxTrainNumber.SelectedIndex);
-                count = GetCountPlaces(train);
+                //count = //GetCountPlaces(train);
                 if (lastCount != count)
                 {
                     SearchSettings.Instance.Notifier.Notify(new List<MessageArgs>{new MessageArgs

@@ -35,15 +35,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="De.TorstenMandelkow.MetroChart">
-      <HintPath>..\..\..\Курсач (Аеропорт)22.04\Курсова\AIR2\AirPort\bin\Debug\De.TorstenMandelkow.MetroChart.dll</HintPath>
+    <Reference Include="De.TorstenMandelkow.MetroChart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d5b8d1bbc99c4a2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.dll</HintPath>
+    </Reference>
+    <Reference Include="DesignLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\DesignLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Hardcodet.Wpf.TaskbarNotification, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Hardcodet.NotifyIcon.Wpf.1.0.5\lib\net451\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
     </Reference>
-    <Reference Include="MahApps.Metro">
-      <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll</HintPath>
+    <Reference Include="MahApps.Metro, Version=1.1.2.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WPFSpark.1.1\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
@@ -63,18 +69,15 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="TicketReminderLibrary">
-      <HintPath>..\TicketReminderLibrary\bin\Debug\TicketReminderLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="VkNet">
       <HintPath>..\packages\VkNet.1.0.16\lib\net40\VkNet.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="WPFSpark, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="WPFSpark, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\WPFSpark.1.1\lib\net40\WPFSpark.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\WPFSpark.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +212,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminderLibrary\TicketReminderLibrary.csproj">
+      <Project>{acf0ff5b-cc9c-419b-aeb7-da92c6c43b0f}</Project>
+      <Name>TicketReminderLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DprcParser\DprcParser.csproj">
       <Project>{0c40d3ab-e0a3-45e5-bd6f-56d8c63ad8fa}</Project>
       <Name>DprcParser</Name>
