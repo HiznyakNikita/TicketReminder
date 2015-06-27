@@ -102,9 +102,16 @@ namespace DprcParser
         /// <param name="password">user password at dprc.gov.ua`</param>
         public static void Auth(string login, string password)
         {
-            string url = "http://dprc.gov.ua/auth.php";
-            string data = "USER_LOGIN=" + login + "USER_PASSWORD=" + password + "&USER_REMEMBER=Y&do_login=%D0%92%D0%BE%D0%B9%D1%82%D0%B8&back_url=%252Finvoice.php";
-            PostHttp(url, data);
+            try
+            {
+                string url = "http://dprc.gov.ua/auth.php";
+                string data = "USER_LOGIN=" + login + "USER_PASSWORD=" + password + "&USER_REMEMBER=Y&do_login=%D0%92%D0%BE%D0%B9%D1%82%D0%B8&back_url=%252Finvoice.php";
+                PostHttp(url, data);
+            }
+            catch(Exception)
+            {
+                throw new UnauthorizedAccessException();
+            }
         }
 
         /// <summary>

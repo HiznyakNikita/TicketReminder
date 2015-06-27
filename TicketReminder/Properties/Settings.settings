@@ -23,5 +23,8 @@
     <Setting Name="AppSmtpServer" Type="System.String" Scope="User">
       <Value Profile="(Default)">smtp.gmail.com</Value>
     </Setting>
+    <Setting Name="UserEmailPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

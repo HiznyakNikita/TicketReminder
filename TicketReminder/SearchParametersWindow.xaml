@@ -1,9 +1,31 @@
-﻿<Window x:Class="TicketReminder.SearchParametersWindow"
+﻿<Controls:MetroWindow x:Class="TicketReminder.SearchParametersWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-       Title="Параметры поиска" Height="286.17" Width="258.51">
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+       Title="Параметры поиска" Height="285.929" Width="337.11" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <ComboBox x:Name="cmbBoxCarType" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="96" SelectionChanged="cmbBoxCarType_SelectionChanged">
+
+        <TextBlock Margin="171,11,22,0" Text="Type train ..."
+             Foreground="Gray" FontSize="14"
+             Visibility="{Binding ElementName=cmbBoxCarType, Path=Text.IsEmpty,
+                          Converter={StaticResource BooleanToVisibilityConverter}}" Height="25" VerticalAlignment="Top" />
+
+        <TextBlock Margin="171,40,22,0" Text="Type place ..."
+             Foreground="Gray" FontSize="14"
+             Visibility="{Binding ElementName=cmbBoxPlaceType, Path=Text.IsEmpty,
+                          Converter={StaticResource BooleanToVisibilityConverter}}" Height="25" VerticalAlignment="Top" />
+
+        <TextBlock Margin="171,108,22,0" Text="Time reserve ..."
+             Foreground="Gray" FontSize="14"
+             Visibility="{Binding ElementName=cmbBoxCarTypeReserve, Path=Text.IsEmpty,
+                          Converter={StaticResource BooleanToVisibilityConverter}}" Height="25" VerticalAlignment="Top" />
+
+        <TextBlock Margin="171,180,22,0" Text="Time check ..."
+             Foreground="Gray" FontSize="14"
+             Visibility="{Binding ElementName=tbCheckPeriod, Path=Text.IsEmpty,
+                          Converter={StaticResource BooleanToVisibilityConverter}}" Height="25" VerticalAlignment="Top" />
+
+        <ComboBox x:Name="cmbBoxCarType" Background="Transparent" Margin="165,11,10,0" VerticalAlignment="Top" SelectionChanged="cmbBoxCarType_SelectionChanged">
             <ComboBoxItem Content="Люкс"/>
             <ComboBoxItem Content="Купэ фирменное"/>
             <ComboBoxItem Content="Купэ"/>
@@ -12,10 +34,10 @@
             <ComboBoxItem Content="Сидя"/>
         </ComboBox>
         <Label x:Name="lblCarType" Content="Тип вагона:" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="101"/>
-        <ComboBox x:Name="cmbBoxPlaceType" HorizontalAlignment="Left" Margin="145,41,0,0" VerticalAlignment="Top" Width="96"/>
+        <ComboBox x:Name="cmbBoxPlaceType" Margin="165,41,10,0" Background="Transparent" VerticalAlignment="Top"/>
         <Label x:Name="lblPlaceType" Content="Тип места:" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="101"/>
-        <CheckBox x:Name="checkBoxReserve" Content="Резервировать билет" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="231" Checked="checkBoxReserve_Checked" Unchecked="checkBoxReserve_Unchecked"/>
-        <ComboBox x:Name="cmbBoxCarTypeReserve" HorizontalAlignment="Left" Margin="145,112,0,0" VerticalAlignment="Top" Width="96" SelectionChanged="cmbBoxCarType_SelectionChanged">
+        <CheckBox x:Name="checkBoxReserve" Content="Резервировать билет" HorizontalAlignment="Left" Margin="34,73,0,0" VerticalAlignment="Top" Width="212" Checked="checkBoxReserve_Checked" Unchecked="checkBoxReserve_Unchecked"/>
+        <ComboBox x:Name="cmbBoxCarTypeReserve" Background="Transparent" Margin="165,108,10,0" VerticalAlignment="Top" SelectionChanged="cmbBoxCarType_SelectionChanged">
             <ComboBoxItem Content="Люкс"/>
             <ComboBoxItem Content="Купэ фирменное"/>
             <ComboBoxItem Content="Купэ"/>
@@ -24,9 +46,14 @@
             <ComboBoxItem Content="Сидя"/>
         </ComboBox>
         <Label x:Name="lblCarTypeReserve" Content="Приоритет резерва:" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="130"/>
-        <Label x:Name="lblCheckPeriod" Content="Период проверки (мин.):" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbCheckPeriod" HorizontalAlignment="Left" Height="23" Margin="157,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84"/>
-        <Button x:Name="btnSaveChanges" Content="Сохранить" HorizontalAlignment="Left" Margin="94,204,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveChanges_Click"/>
+        <Label x:Name="lblCheckPeriod" Content="Период проверки (мин.):" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbCheckPeriod" Height="23" Background="Transparent" Margin="165,182,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="btnSaveChanges" Content="Сохранить" HorizontalAlignment="Left" Margin="127,227,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveChanges_Click"/>
+        <ComboBox x:Name="cmbBoxNotifyBy" Background="Transparent" Margin="165,143,10,0" VerticalAlignment="Top" SelectionChanged="cmbBoxCarType_SelectionChanged">
+            <ComboBoxItem Content="Почта"/>
+            <ComboBoxItem Content="Вконтакте"/>
+        </ComboBox>
+        <Label x:Name="lblNotifyBy" Content="Оповещать через:" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="130"/>
 
     </Grid>
-</Window>
+</Controls:MetroWindow>

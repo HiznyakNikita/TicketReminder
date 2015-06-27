@@ -106,5 +106,17 @@ namespace TicketReminder.Properties {
                 this["AppSmtpServer"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string UserEmailPassword {
+            get {
+                return ((string)(this["UserEmailPassword"]));
+            }
+            set {
+                this["UserEmailPassword"] = value;
+            }
+        }
     }
 }

@@ -14,21 +14,19 @@ namespace TicketReminder
         private string password;
         private string mailto;
         private string caption;
-        private MessageArgs messageArgs;
 
         public EmailHelper(string password,
-            string mailto, string caption, MessageArgs messageArgs)
+            string mailto, string caption)
         {
             this.password = password;
             this.mailto = mailto;
             this.caption = caption;
-            this.messageArgs = messageArgs;
         }
 
-        public static void SendMail(string password,
-            string mailto, string caption, MessageArgs args)
+        private static void SendMail(string password,
+            string mailto, string caption, List<MessageArgs> args)
         {
-            string message = CreateMessage(args); 
+            string message = CreateMessage(args);
             try
             {
                 MailMessage mail = new MailMessage();
@@ -51,14 +49,17 @@ namespace TicketReminder
             }
         }
 
-        private static string CreateMessage(MessageArgs args) 
+        private static string CreateMessage(List<MessageArgs> args)
         {
-            return args.From + " - " + args.To + " на " + args.Date + "Поезд: " + args.TrainNumber + " Количество мест: " + args.PlacesCount;
+            string message = "";
+            foreach(var arg in args)
+                message+= arg.From + " - " + arg.To + " на " + arg.Date + "Поезд: " + arg.TrainNumber + " Количество мест: " + arg.PlacesCount + Environment.NewLine;
+            return message;
         }
 
-        public void Notify()
+        public void Notify(List<MessageArgs> args)
         {
-            SendMail(password, mailto, caption, messageArgs);
+            SendMail(password, mailto, caption, args);
         }
     }
 }

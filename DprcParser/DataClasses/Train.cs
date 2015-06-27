@@ -104,5 +104,26 @@ namespace TicketReminder.DataClasses
             }
             return count;
         }
+
+        public int GetCountPlacesByCarAndPlaceTypes(List<PlaceType> placeTypes, List<CarType> carTypes)
+        {
+            int count = 0;
+            List<Car> cars = new List<Car>();
+            foreach(var car in Cars)
+                if (carTypes.Contains(car.Type))
+                    cars.Add(car);
+            foreach(var car in cars)
+            {
+                if (placeTypes.Contains(PlaceType.HighCoupe))
+                    count += car.HighCoupeCount;
+                if (placeTypes.Contains(PlaceType.LowCoupe))
+                    count += car.LowCoupeCount;
+                if (placeTypes.Contains(PlaceType.HighSide))
+                    count += car.HighSideCount;
+                if (placeTypes.Contains(PlaceType.LowSide))
+                    count += car.LowSideCount;
+            }
+            return count;
+        }
     }
 }

@@ -35,17 +35,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="De.TorstenMandelkow.MetroChart">
+      <HintPath>..\..\..\Курсач (Аеропорт)22.04\Курсова\AIR2\AirPort\bin\Debug\De.TorstenMandelkow.MetroChart.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+    <Reference Include="Hardcodet.Wpf.TaskbarNotification, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Hardcodet.NotifyIcon.Wpf.1.0.5\lib\net451\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFSpark.1.1\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFSpark.1.1\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,12 +63,19 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="TicketReminderLibrary">
+      <HintPath>..\TicketReminderLibrary\bin\Debug\TicketReminderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="VkNet">
-      <HintPath>D:\C#\UZ_ticket\UzTicket\UzTicket\bin\Debug\VkNet.dll</HintPath>
+      <HintPath>..\packages\VkNet.1.0.16\lib\net40\VkNet.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WPFSpark, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WPFSpark.1.1\lib\net40\WPFSpark.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -69,35 +85,45 @@
     <Compile Include="AuthQuestionWindow.xaml.cs">
       <DependentUpon>AuthQuestionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HelperClasses\AppSettings.cs" />
+    <Compile Include="HelperClasses\AppWindow.cs" />
     <Compile Include="HelperClasses\EmailHelper.cs" />
     <Compile Include="HelperClasses\Helper.cs" />
     <Compile Include="HelperClasses\INotifier.cs" />
     <Compile Include="HelperClasses\MessageArgs.cs" />
     <Compile Include="HelperClasses\VkontakteHelper.cs" />
-    <Compile Include="LogInWindow.xaml.cs">
-      <DependentUpon>LogInWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="RegisterBrowser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegisterBrowser.Designer.cs">
       <DependentUpon>RegisterBrowser.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationWindow.xaml.cs">
-      <DependentUpon>RegistrationWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SearchParametersWindow.xaml.cs">
       <DependentUpon>SearchParametersWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SearchSettings.cs" />
+    <Compile Include="Showcase\ToolTipNoTicket.xaml.cs">
+      <DependentUpon>ToolTipNoTicket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\HelpWindow.xaml.cs">
+      <DependentUpon>HelpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\MainAppWindow.xaml.cs">
+      <DependentUpon>MainAppWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SettingsAppWindow.xaml.cs">
+      <DependentUpon>SettingsAppWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SettingsWindow.xaml.cs">
       <DependentUpon>SettingsWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Showcase\UserNotification.xaml.cs">
+      <DependentUpon>UserNotification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\StatisticWindow.xaml.cs">
+      <DependentUpon>StatisticWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AuthQuestionWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LogInWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,15 +139,39 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="RegistrationWindow.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resources\Icons.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="SearchParametersWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Showcase\ToolTipNoTicket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\HelpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\MainAppWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SettingsAppWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Showcase\UserNotification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\StatisticWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -153,6 +203,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\Entypo.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -162,6 +213,19 @@
       <Project>{0c40d3ab-e0a3-45e5-bd6f-56d8c63ad8fa}</Project>
       <Name>DprcParser</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\ticket.ico" />
+    <Resource Include="Icons\Train.ico" />
+    <Resource Include="Icons\Train2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\air_logo.png" />
+    <Resource Include="Images\train_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Entypo-license.txt" />
+    <Resource Include="Resources\WindowsIcons-license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

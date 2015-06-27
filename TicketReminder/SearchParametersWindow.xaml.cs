@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +18,8 @@ namespace TicketReminder
     /// <summary>
     /// Interaction logic for SearchParametersWindow.xaml
     /// </summary>
-    public partial class SearchParametersWindow : Window
+    public partial class SearchParametersWindow : MetroWindow
     {
-        public static SearchSettings searchSettings;
         public SearchParametersWindow()
         {
             InitializeComponent();
@@ -74,19 +74,25 @@ namespace TicketReminder
 
         private void btnSaveChanges_Click(object sender, RoutedEventArgs e)
         {
-            searchSettings = new SearchSettings();
             if (cmbBoxCarType.SelectedItem != null)
-                searchSettings.CarType = cmbBoxCarType.Text;
+                SearchSettings.Instance.CarType = cmbBoxCarType.Text;
             if (cmbBoxCarTypeReserve.SelectedItem != null)
-                searchSettings.ReservePriority = cmbBoxCarTypeReserve.Text;
+                SearchSettings.Instance.ReservePriority = cmbBoxCarTypeReserve.Text;
             if (checkBoxReserve.IsChecked == true)
-                searchSettings.EnableReserve = true;
+                SearchSettings.Instance.EnableReserve = true;
             else
-                searchSettings.EnableReserve = false;
+                SearchSettings.Instance.EnableReserve = false;
             if (cmbBoxPlaceType.SelectedItem != null)
-                searchSettings.PlaceType = cmbBoxPlaceType.Text;
+                SearchSettings.Instance.PlaceType = cmbBoxPlaceType.Text;
             if (tbCheckPeriod.Text != "")
-                searchSettings.CheckPeriod = Convert.ToInt32(tbCheckPeriod.Text);
+                SearchSettings.Instance.CheckPeriod = Convert.ToInt32(tbCheckPeriod.Text);
+            if(cmbBoxNotifyBy.SelectedItem!= null)
+            {
+                if (cmbBoxNotifyBy.SelectedIndex == 0)
+                    SearchSettings.Instance.Notifier = new EmailHelper(Properties.Settings.Default.UserEmailPassword, Properties.Settings.Default.UserEmail, "Білети Укрзалізниця");
+                else if (cmbBoxNotifyBy.SelectedIndex == 1)
+                    SearchSettings.Instance.Notifier = new VkontakteHelper();
+            }
         }
     }
 }

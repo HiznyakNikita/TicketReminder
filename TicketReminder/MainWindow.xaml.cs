@@ -1,4 +1,5 @@
 ﻿using DprcParser;
+using MahApps.Metro.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,21 +15,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using TicketReminder.DataClasses;
+using TicketReminder.HelperClasses;
 
 namespace TicketReminder
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : MetroWindow
     {
         static DispatcherTimer dispatcherTimer = new DispatcherTimer();
 
         public MainWindow()
         {
             InitializeComponent();
-            AuthQuestionWindow authQuestionWindow = new AuthQuestionWindow();
-            authQuestionWindow.ShowDialog();
+            //AuthQuestionWindow authQuestionWindow = new AuthQuestionWindow();
+            //authQuestionWindow.ShowDialog();
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
             // TODO load stations names by 1-2-.. and all letters. Fix load bug
             cmbBoxPointFrom.AddHandler(System.Windows.Controls.Primitives.TextBoxBase.TextChangedEvent,
@@ -42,21 +45,72 @@ namespace TicketReminder
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             //Search logic by parameters from search settings
-            //EXAMPLE:
-            //int lastCount = 0;
-            //int count = 0;
-            //if(cmbBoxTrainNumber.Text == "Все поезда")
-            //{
-            //    count = Train.GetAllTrainsByRouteInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString())).Count;
-            //    lastCount = count;
-            //}
-            //else if(SearchParametersWindow.searchSettings.CarType!="" && SearchParametersWindow.searchSettings.PlaceType=="")
-            //{
-            //    count = Train.GetCountPlacesByCarType()
-            //}
-            //int count = DprcGovUaParser.GetPlacesCount(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()), cmbBoxTrainNumber.Text, Helper.ConvertToCarType(cmbBoxCarType.Text));
-            //VkontakteHelper.SendMessage(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, datePickerDate.SelectedDate.Value.ToShortDateString(), count.ToString(), cmbBoxTrainNumber.Text);
+            int lastCount = 0;
+            int count = 0;
+            if (cmbBoxTrainNumber.Text == "Все поезда")
+            {
+                List<Train> trains = Train.GetAllTrainsByRouteInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()));
+                foreach (var train in trains)
+                    count += GetCountPlaces(train);
+                if (lastCount != count)
+                {
+                    NotifyAllTrains(trains);
+                    lastCount = count;
+                }
+            }
+            else
+            {
+                Train train = Train.GetAllTrainInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()), cmbBoxTrainNumber.Text, cmbBoxTrainNumber.SelectedIndex);
+                count = GetCountPlaces(train);
+                if (lastCount != count)
+                {
+                    SearchSettings.Instance.Notifier.Notify(new List<MessageArgs>{new MessageArgs
+                    {
+                        From = cmbBoxPointFrom.Text,
+                        To = cmbBoxPointTo.Text,
+                        Date = Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()),
+                        TrainNumber = train.Number,
+                        PlacesCount = train.PlacesCount.ToString()
+                    }});
+                }
+            }
         }
+
+        private void NotifyAllTrains(List<Train> trains)
+        {
+            List<MessageArgs> args = new List<MessageArgs>();
+            foreach (var train in trains)
+                args.Add(new MessageArgs
+                {
+                    From = cmbBoxPointFrom.Text,
+                    To = cmbBoxPointTo.Text,
+                    Date = Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()),
+                    TrainNumber = train.Number,
+                    PlacesCount = train.PlacesCount.ToString()
+                });
+            SearchSettings.Instance.Notifier.Notify(args);
+        }
+
+        //UNCOMMENT WHEN DO MULTIPLY SELECT COMBOBOXES
+        //private int GetCountPlaces(Train train)
+        //{
+        //    if(SearchSettings.Instance.CarType!="" && SearchSettings.Instance.PlaceType=="")
+        //    {
+        //        return train.GetCountPlacesByCarType(new List<CarType> { SearchSettings.Instance.CarType });
+        //    }
+        //    else if (SearchSettings.Instance.CarType == "" && SearchSettings.Instance.PlaceType != "")
+        //    {
+        //        return train.GetCountPlacesByPlaceType(new List<PlaceType> { SearchSettings.Instance.PlaceType });
+        //    }
+        //    else if (SearchSettings.Instance.CarType != "" && SearchSettings.Instance.PlaceType != "")
+        //    {
+        //        return train.GetCountPlacesByCarAndPlaceTypes(new List<PlaceType> { SearchSettings.Instance.PlaceType }, new List<CarType> { SearchSettings.Instance.CarType });
+        //    }
+        //    else
+        //    {
+        //        return train.GetPlacesCount();
+        //    }
+        //}
 
         private void ComboBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -81,13 +135,13 @@ namespace TicketReminder
             SearchParametersWindow searchParametersWindow = new SearchParametersWindow();
             searchParametersWindow.ShowDialog();
             // Run search timer with check period from search settings
-            dispatcherTimer.Interval = new TimeSpan(0, 0, SearchParametersWindow.searchSettings.CheckPeriod);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, SearchSettings.Instance.CheckPeriod);
             dispatcherTimer.Start();
         }
 
         private void menuItemSettings_Click(object sender, RoutedEventArgs e)
         {
-            SettingsWindow settingsWindow = new SettingsWindow();
+            SettingsWindow settingsWindow = new SettingsWindow(false);
             settingsWindow.ShowDialog();
         }
 
@@ -95,6 +149,11 @@ namespace TicketReminder
         {
             //Cancel reserve ticket. Need to buy a ticket by user with credit card number and other settings that not support in program(To ensure user safety)
             Parser.CancelReserveTicket();
+        }
+
+        private void btnHelpWindow_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.MessageBox.Show("Тут буде певна підказка");
         }
     }
 }

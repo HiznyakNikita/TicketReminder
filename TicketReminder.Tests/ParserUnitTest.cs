@@ -33,7 +33,7 @@ namespace TicketReminder.Tests
         [TestMethod]
         public void Can_GetRuntimeNames()
         {
-            //Arrange - get name by part name
+            //Act - get name by part name
             string[] names = Parser.GetRunTimeNames("К");
 
             //Assert check count of "runtime" names
@@ -45,13 +45,11 @@ namespace TicketReminder.Tests
         public void Can_GetAllTrainInfo()
         {
             //CHANGE DATE OR TRAIN NUMBER IN LIST IF TEST IS FAILED
-            //Arrange - get train info
+            //Act - get train info
             Train train = Parser.GetAllTrainInfo("КИЇВ-ПАСАЖИРСЬКИЙ", "ЗАПОРІЖЖЯ 1", "2015-07-02", "072К", 2);
 
             //Assert check train object if it is null
             Assert.IsNotNull(train);
-
-
         }
     }
 }
