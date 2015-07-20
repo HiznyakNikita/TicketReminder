@@ -42,6 +42,8 @@ namespace TicketReminder.HelperClasses
             Timeout = timeout;
         }
 
+        public Notify() { }
+
         public void ShowNotify(List<MessageArgs> ListArgs)
         {
             MainAppWindow win = MainAppWindow.Instance;

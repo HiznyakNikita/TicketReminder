@@ -122,11 +122,11 @@ namespace TicketReminder
             }
             if (tbCheckPeriod.Text != "")
                 SearchSettings.Instance.CheckPeriod = Convert.ToInt32(tbCheckPeriod.Text);
-            if(cmbBoxNotifyBy.SelectedItem!= null)
+            if(lstBoxNotifyType.SelectedItems.Count > 0)
             {
-                if (cmbBoxNotifyBy.SelectedIndex == 0)
+                if (lstBoxNotifyType.SelectedIndex == 0)
                     SearchSettings.Instance.Notifier = new EmailHelper(Properties.Settings.Default.UserEmailPassword, Properties.Settings.Default.UserEmail, "Білети Укрзалізниця");
-                else if (cmbBoxNotifyBy.SelectedIndex == 1)
+                else if (lstBoxNotifyType.SelectedIndex == 1)
                     SearchSettings.Instance.Notifier = new VkontakteHelper();
             }
         }

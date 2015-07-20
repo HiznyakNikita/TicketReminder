@@ -43,7 +43,7 @@ namespace TicketReminder.Showcase
         public MetroMessageBox()
         {
             InitializeComponent();
-            this.MessageTitle.Text = "1234567SAJFDasd";
+            this.MessageTitle.Text = "";
             
         }
 
