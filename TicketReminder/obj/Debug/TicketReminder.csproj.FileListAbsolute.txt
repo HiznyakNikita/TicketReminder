@@ -1,0 +1,572 @@
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\LogInWindow.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\RegistrationWindow.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\LogInWindow.g.cs
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\RegistrationWindow.g.cs
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminderLibrary.dll
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminderLibrary.pdb
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.dll
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+D:\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.xml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\App.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+D:\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminderLibrary.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.xml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\TicketReminderLibrary.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\RegistrationWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\App.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\RegistrationWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\WPFSpark.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\WPFSpark.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.xml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.pdb
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.baml
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.g.cs
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.lref
+F:\Pasha\Студент\MyProject\TicketReminder\TicketReminder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\TicketReminderLibrary.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.xml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\TicketReminderLibrary.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\WPFSpark.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\RegistrationWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\App.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\RegistrationWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.lref
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+C:\Users\Леся\Downloads\TicketReminder\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.xml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\App.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.lref
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\TicketReminder.RegisterBrowser.resources
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\DesignLibrary.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.lref
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.RegisterBrowser.resources
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\Common.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.baml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.g.cs
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.TicketReminder.exe.config
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DesignLibrary.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.xml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\Common.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.lref
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.baml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.RegisterBrowser.resources
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Design.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Fonts.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Design.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Fonts.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.xml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\Common.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\StatisticWindow.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.lref
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.baml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.RegisterBrowser.resources
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Design.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Fonts.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\de\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\en\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\es\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\it\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\Common.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.lref
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.baml
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.RegisterBrowser.resources
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+F:\1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ToggleSwitch.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe.config
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.exe
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.exe
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\TicketReminder.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Design.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\ToggleSwitch.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\DprcParser.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\VkNet.xml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csprojResolveAssemblyReference.cache
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\Common.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Resources\Icons.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SearchParametersWindow.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\ToolTipNoTicket.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\HelpWindow.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\SettingsAppWindow.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\SettingsWindow.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Showcase\UserNotification.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.cache
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder_MarkupCompile.lref
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\AuthQuestionWindow.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\MainWindow.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\Windows\MainAppWindow.baml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.g.resources
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.Properties.Resources.resources
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.RegisterBrowser.resources
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\TicketReminder.csproj.GenerateResource.Cache
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.xml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.xml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\TicketReminder\obj\Debug\App.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\Common.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.baml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\MetroMessageBox.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\obj\Debug\Showcase\TicketNotify.g.cs
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Design.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\MetroFramework.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\ToggleSwitch.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.xml

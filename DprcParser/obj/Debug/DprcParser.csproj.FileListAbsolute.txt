@@ -1,0 +1,83 @@
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\obj\Debug\DprcParser.csprojResolveAssemblyReference.cache
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\DprcParser.dll.config
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\DprcParser.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\DprcParser.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\VkNet.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\VkNet.pdb
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\bin\Debug\VkNet.xml
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\obj\Debug\DprcParser.dll
+C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\DprcParser\obj\Debug\DprcParser.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll.config
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.xml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.xml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.xml
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.dll
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.pdb
+F:\Pasha\Студент\MyProject\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.csprojResolveAssemblyReference.cache
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll.config
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.pdb
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.xml
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.csprojResolveAssemblyReference.cache
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.dll
+C:\Users\Леся\Downloads\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll.config
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.xml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.xml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.pdb
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.xml
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.csprojResolveAssemblyReference.cache
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.dll
+D:\Студент\MyProject\TicketReminderRefresh\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.pdb
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll.config
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.pdb
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.dll
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.dll
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.dll
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.pdb
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.xml
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.xml
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.pdb
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.xml
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.dll
+F:\1\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll.config
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\DprcParser.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.pdb
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\bin\Debug\VkNet.xml
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.csprojResolveAssemblyReference.cache
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.dll
+C:\Users\Леся\AppData\Roaming\Skype\My Skype Received Files\TicketReminderRefreshV1.1\TicketReminderRefresh\TicketReminder\DprcParser\obj\Debug\DprcParser.pdb

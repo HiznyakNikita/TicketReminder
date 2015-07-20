@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <AppSettings>
+    <PathSound>This is path</PathSound>
+    <Price>Free</Price>
+  </AppSettings>
+  <UserSettings>
+    <Name>Pasha</Name>
+    <Age>18</Age>
+    <VkIdUser>123412431</VkIdUser>
+  </UserSettings>
+</Settings>

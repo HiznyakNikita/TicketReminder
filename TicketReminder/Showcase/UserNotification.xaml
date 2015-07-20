@@ -1,0 +1,190 @@
+﻿<UserControl x:Class="TicketReminder.Showcase.UserNotification"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:tb="http://www.hardcodet.net/taskbar"
+             Height="143"
+             Width="315">
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.AnimatedSingleRowTabControl.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+
+            <Storyboard x:Key="FadeIn">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="grid"
+                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                      Value="0" />
+                    <SplineDoubleKeyFrame KeyTime="00:00:01"
+                                      Value="0.95" />
+                    <SplineDoubleKeyFrame KeyTime="00:00:03"
+                                      Value="0.95" />
+                    <!--				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>-->
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="HighlightCloseButton">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="imgClose"
+                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                      Value="0.4" />
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.3000000"
+                                      Value="1" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="FadeCloseButton">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="imgClose"
+                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                      Value="1" />
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.3000000"
+                                      Value="0.4" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="FadeBack">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="grid"
+                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                      Value="1" />
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.3000000"
+                                      Value="1" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="FadeOut"
+                    Completed="OnFadeOutCompleted">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="grid"
+                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                      Value="1" />
+                    <SplineDoubleKeyFrame KeyTime="00:00:00.3000000"
+                                      Value="0.2" />
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="tb:TaskbarIcon.BalloonShowing">
+            <BeginStoryboard Storyboard="{StaticResource FadeIn}"
+                             x:Name="FadeIn_BeginStoryboard" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter"
+                      SourceName="imgClose">
+            <BeginStoryboard Storyboard="{StaticResource HighlightCloseButton}"
+                             x:Name="HighlightCloseButton_BeginStoryboard" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave"
+                      SourceName="imgClose">
+            <BeginStoryboard Storyboard="{StaticResource FadeCloseButton}"
+                             x:Name="FadeCloseButton_BeginStoryboard" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter">
+            <StopStoryboard BeginStoryboardName="FadeIn_BeginStoryboard" />
+            <BeginStoryboard x:Name="FadeBack_BeginStoryboard1"
+                             Storyboard="{StaticResource FadeBack}" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="tb:TaskbarIcon.BalloonClosing">
+            <BeginStoryboard Storyboard="{StaticResource FadeOut}"
+                             x:Name="FadeOut_BeginStoryboard" />
+        </EventTrigger>
+    </UserControl.Triggers>
+
+
+    <Grid x:Name="grid"
+          MouseEnter="grid_MouseEnter" Margin="0,0,-4,0">
+        <Border HorizontalAlignment="Stretch"
+                Margin="5,5,5,5"
+                BorderThickness="1,1,1,1"
+                BorderBrush="#FF377599" Background="#FFFBFAFA">
+            <Border.Effect>
+                <DropShadowEffect Color="#FF747474" />
+            </Border.Effect>
+        </Border>
+        <Image HorizontalAlignment="Left"
+               Margin="10,13,0,0"
+               Width="67"
+               
+               Stretch="Fill"
+               Height="71"
+               VerticalAlignment="Top" Source="/TicketReminder;component/Icons/ticket.ico" />
+        <TextBlock x:Name="MainText" Margin="82,52,10,0"
+                   VerticalAlignment="Top"
+                   Foreground="#FF006FCB"
+                   FontSize="14"                   
+                   TextWrapping="Wrap">
+            <Run Text="This is a user control. The animation uses the attached " />
+            <Run FontStyle="Italic"
+                 FontWeight="Bold"
+                 Text="BalloonShowing " />
+        </TextBlock>
+        <Path Fill="#FFFFFFFF"
+              Stretch="Fill"
+              Margin="82,52,7.667,0"
+              VerticalAlignment="Top"
+              Height="1"
+              Data="M26,107 L220.04123,107"
+              SnapsToDevicePixels="True">
+            <Path.Stroke>
+                <LinearGradientBrush EndPoint="0.973,0.5"
+                                     StartPoint="0.005,0.5">
+                    <GradientStop Color="#00ECAD25"
+                                  Offset="1" />
+                    <GradientStop Color="#872592EC"
+                                  Offset="0.673" />
+                </LinearGradientBrush>
+            </Path.Stroke>
+        </Path>
+        <TextBlock Margin="82,10,35,0" TextAlignment="Center"
+                   VerticalAlignment="Top"
+                   Height="40"
+                   FontSize="14"
+                   Text="123123"
+                   x:Name="HeaderBalloon"
+                   TextWrapping="Wrap"
+                   Foreground="#FF006FCB"
+                   FontWeight="Bold" />
+        <Image HorizontalAlignment="Right"
+               Margin="0,10,10,0"
+               VerticalAlignment="Top"
+               Width="20"
+               Height="22"
+               Opacity="0.7"
+               Stretch="Fill"
+               ToolTip="Close Balloon"
+               x:Name="imgClose"
+               MouseDown="imgClose_MouseDown" Source="/TicketReminder;component/Images/close.png" />
+        <Path Fill="#FFFFFFFF"
+        	Stretch="Fill"
+        	Margin="10,97,10,0"
+        	VerticalAlignment="Top"
+        	Height="1"
+        	Data="M26,107 L220.04123,107"
+        	SnapsToDevicePixels="True">
+            <Path.Stroke>
+                <LinearGradientBrush EndPoint="0.973,0.5"
+        			StartPoint="0.005,0.5">
+                    <GradientStop Color="#00ECAD25"
+        				Offset="1" />
+                    <GradientStop Color="#872592EC"
+        				Offset="0.931" />
+                </LinearGradientBrush>
+            </Path.Stroke>
+        </Path>
+        <Button x:Name="btnShowTicket" Content="Ticket" HorizontalAlignment="Left" Margin="234,103,0,0" VerticalAlignment="Top" Width="75" Click="btnShowTicket_Click"/>
+        <!--<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="14" Foreground="#FF006FCB" Text="All unread messages: " VerticalAlignment="Top" Margin="10,113,0,0"/>
+        <TextBlock x:Name="AllUnReadMessagesCount" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" Foreground="#FF006FCB" Text="count" VerticalAlignment="Top" Margin="144,113,0,0"/>-->
+
+    </Grid>
+</UserControl>
