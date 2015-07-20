@@ -61,22 +61,25 @@ namespace TicketReminder
        
         private void RegisterBrowser_Load(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("https://dprc.gov.ua/");
+            webBrowser1.Navigate("http://dprc.gov.ua/index.php?set_language=2");
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {          
             List<HtmlElement> elements = new List<HtmlElement>();
-            HtmlElement span;
-            var spans = webBrowser1.Document.GetElementsByTagName("A");
-            foreach (var item in spans)
-            {
-                if (((HtmlElement)item).InnerText != null && ((HtmlElement)item).InnerText.Contains("Создать учётную запись"))
-                {
-                    span = (HtmlElement)item;
-                    span.InvokeMember("click");
-                }
-            }
+            HtmlElement a;
+            a = (HtmlElement)webBrowser1.Document.GetElementById("register");
+            a.InvokeMember("click");
+
+            //var spans = webBrowser1.Document.GetElementsByTagName("A");
+            //foreach (var item in spans)
+            //{
+            //    if (((HtmlElement)item).InnerText != null && ((HtmlElement)item).InnerText.Contains("Создать учётную запись"))
+            //    {
+            //        span = (HtmlElement)item;
+            //        span.InvokeMember("click");
+            //    }
+            //}
             isRegisterLoad = true;
             dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0,500);
             dispatcherTimer.Start();

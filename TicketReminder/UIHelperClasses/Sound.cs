@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace TicketReminderLibrary
+namespace TicketReminder
 {
     public class Sound
     {
@@ -22,7 +22,7 @@ namespace TicketReminderLibrary
 
         public static string Location { get; set; }
 
-        public Sound() { }
+        public Sound() { Sound.Location = Environment.CurrentDirectory + "\\Sounds\\Iphone_Ringtone_freetone.at.ua.mp3"; }
         public Sound(string location)
         {
             Location = location;

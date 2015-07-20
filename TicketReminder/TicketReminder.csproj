@@ -35,21 +35,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="De.TorstenMandelkow.MetroChart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d5b8d1bbc99c4a2a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\De.TorstenMandelkow.MetroChart.dll</HintPath>
+    <Reference Include="De.TorstenMandelkow.MetroChart">
+      <HintPath>..\packages\De.TorstenMandelkow.MetroChart.1.0.0\lib\De.TorstenMandelkow.MetroChart.dll</HintPath>
     </Reference>
     <Reference Include="DesignLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\DesignLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Hardcodet.Wpf.TaskbarNotification, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
+    <Reference Include="Hardcodet.Wpf.TaskbarNotification">
+      <HintPath>..\packages\Hardcodet.NotifyIcon.Wpf.1.0.5\lib\net451\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
     </Reference>
-    <Reference Include="MahApps.Metro, Version=1.1.2.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\MahApps.Metro.dll</HintPath>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\packages\MahApps.Metro.1.1.3-ALPHA124\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WPFSpark.1.1\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
@@ -58,8 +64,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\WPFSpark.1.1\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.1.3-ALPHA124\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,16 +75,16 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="ToggleSwitch, Version=1.1.1.0, Culture=neutral, PublicKeyToken=8637099990568f75, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ToggleSwitch.1.1.1\lib\net40-client\ToggleSwitch.dll</HintPath>
+    </Reference>
     <Reference Include="VkNet">
       <HintPath>..\packages\VkNet.1.0.16\lib\net40\VkNet.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="WPFSpark, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminder\bin\Debug\WPFSpark.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -94,6 +100,7 @@
     <Compile Include="HelperClasses\Helper.cs" />
     <Compile Include="HelperClasses\INotifier.cs" />
     <Compile Include="HelperClasses\MessageArgs.cs" />
+    <Compile Include="HelperClasses\Notify.cs" />
     <Compile Include="HelperClasses\VkontakteHelper.cs" />
     <Compile Include="RegisterBrowser.cs">
       <SubType>Form</SubType>
@@ -105,9 +112,18 @@
       <DependentUpon>SearchParametersWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SearchSettings.cs" />
+    <Compile Include="Showcase\MetroMessageBox.xaml.cs">
+      <DependentUpon>MetroMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Showcase\TicketNotify.xaml.cs">
+      <DependentUpon>TicketNotify.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Showcase\ToolTipNoTicket.xaml.cs">
       <DependentUpon>ToolTipNoTicket.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UIHelperClasses\Animation.cs" />
+    <Compile Include="UIHelperClasses\Sound.cs" />
+    <Compile Include="UIHelperClasses\TicketsViewModel.cs" />
     <Compile Include="Windows\HelpWindow.xaml.cs">
       <DependentUpon>HelpWindow.xaml</DependentUpon>
     </Compile>
@@ -122,9 +138,6 @@
     </Compile>
     <Compile Include="Showcase\UserNotification.xaml.cs">
       <DependentUpon>UserNotification.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\StatisticWindow.xaml.cs">
-      <DependentUpon>StatisticWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AuthQuestionWindow.xaml">
       <SubType>Designer</SubType>
@@ -150,6 +163,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Showcase\Common.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Showcase\MetroMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Showcase\TicketNotify.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Showcase\ToolTipNoTicket.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -171,10 +196,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Showcase\UserNotification.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\StatisticWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -212,10 +233,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Downloads\TicketReminder\TicketReminder\TicketReminderLibrary\TicketReminderLibrary.csproj">
-      <Project>{acf0ff5b-cc9c-419b-aeb7-da92c6c43b0f}</Project>
-      <Name>TicketReminderLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DprcParser\DprcParser.csproj">
       <Project>{0c40d3ab-e0a3-45e5-bd6f-56d8c63ad8fa}</Project>
       <Name>DprcParser</Name>
@@ -233,6 +250,31 @@
   <ItemGroup>
     <Resource Include="Resources\Entypo-license.txt" />
     <Resource Include="Resources\WindowsIcons-license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\no_wifi.png" />
+    <Resource Include="Images\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

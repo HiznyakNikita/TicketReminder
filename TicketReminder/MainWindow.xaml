@@ -1,44 +1,62 @@
-﻿<Controls:MetroWindow x:Class="TicketReminder.MainWindow"
+﻿<Controls:MetroWindow
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
-        Title="Search" Height="253.8" Width="316.2" ResizeMode="NoResize" Name="TestMainWindow">
+        xmlns:Showcase="clr-namespace:TicketReminder.Showcase" x:Class="TicketReminder.MainWindow"
+        Title="Search" Height="253.8" Width="316.2" ResizeMode="NoResize" x:Name="TestMainWindow">
 
-    <Window.Resources>
+    <Controls:MetroWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Resources/Icons.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-    </Window.Resources>
+    </Controls:MetroWindow.Resources>
+
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <!--<Button x:Name="btnMenuSettings" Content="Help" Click="btnMenuSettings_Click" />-->
+            <Button x:Name="btnHelpWindow" Click="btnHelpWindow_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="20" Height="20"
+            			Fill="{Binding Foreground, RelativeSource={RelativeSource AncestorType={x:Type Button}}}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+            					Visual="{StaticResource appbar_page_search}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="4 0 0 0"
+            			VerticalAlignment="Center"
+            			Text="Help" />
+                </StackPanel>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
 
     <Grid>
 
         <TextBlock Margin="154,155,46,45" Text="Train number ..."
-             Foreground="Gray" FontSize="14"
-             Visibility="{Binding ElementName=cmbBoxTrainNumber, Path=Text.IsEmpty,
-                          Converter={StaticResource BooleanToVisibilityConverter}}" />
+			Foreground="Gray" FontSize="14"
+			Visibility="{Binding Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=cmbBoxTrainNumber}" />
 
         <TextBlock Margin="154,80,46,120" Text="Place arrival ..."
-             Foreground="Gray" FontSize="14"
-             Visibility="{Binding ElementName=cmbBoxPointTo, Path=Text.IsEmpty,
-                          Converter={StaticResource BooleanToVisibilityConverter}}" />
+			Foreground="Gray" FontSize="14"
+			Visibility="{Binding Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=cmbBoxPointTo}" />
 
         <TextBlock Margin="154,41,46,159" Text="Place departure ..."
-             Foreground="Gray" FontSize="14"
-             Visibility="{Binding ElementName=cmbBoxPointFrom, Path=Text.IsEmpty,
-                          Converter={StaticResource BooleanToVisibilityConverter}}" />
+			Foreground="Gray" FontSize="14"
+			Visibility="{Binding Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=cmbBoxPointFrom}" />
 
 
         <Button x:Name="btnSearch" Content="Поиск" HorizontalAlignment="Left" Margin="215,188,0,0" VerticalAlignment="Top" Width="75" Click="btnSearch_Click"/>
-        
+
         <ComboBox x:Name="cmbBoxPointFrom" Background="Transparent" IsEditable="True" HorizontalAlignment="Left" Margin="142,40,0,0" VerticalAlignment="Top" Width="148"/>
-        
+
         <ComboBox x:Name="cmbBoxPointTo" Background="Transparent" IsEditable="True" HorizontalAlignment="Left" Margin="142,79,0,0" VerticalAlignment="Top" Width="148"/>
         <DatePicker x:Name="datePickerDate" HorizontalAlignment="Left" Margin="142,117,0,0" VerticalAlignment="Top" Width="148"/>
         <Menu Height="31" VerticalAlignment="Top" Margin="0,0,0.4,0">
-            <MenuItem x:Name="menuItemSettings" Header="Настройки" Click="menuItemSettings_Click"></MenuItem>
-            <MenuItem x:Name="menuItemCancelReserve" Header="Отмена резервации" Click="menuItemCancelReserve_Click"></MenuItem>
+            <MenuItem x:Name="menuItemSettings" Header="Настройки" Click="menuItemSettings_Click"/>
+            <MenuItem x:Name="menuItemCancelReserve" Header="Отмена резервации" Click="menuItemCancelReserve_Click"/>
         </Menu>
         <ComboBox x:Name="cmbBoxTrainNumber" Background="Transparent" HorizontalAlignment="Left" Margin="142,154,0,0" VerticalAlignment="Top" Width="148" DropDownOpened="cmbBoxTrainNumber_DropDownOpened" RenderTransformOrigin="-1.314,3.32"/>
         <Label x:Name="lblPointFrom" Content="Пункт отправления:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="123"/>
@@ -47,25 +65,5 @@
         <Label Content="Дата отправления:" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
 
     </Grid>
-
-    <Controls:MetroWindow.RightWindowCommands>
-        <Controls:WindowCommands>
-            <!--<Button x:Name="btnMenuSettings" Content="Help" Click="btnMenuSettings_Click" />-->
-            <Button x:Name="btnHelpWindow" Click="btnHelpWindow_Click">
-                <StackPanel Orientation="Horizontal">
-                    <Rectangle Width="20" Height="20"
-                   Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
-                        <Rectangle.OpacityMask>
-                            <VisualBrush Stretch="Fill"
-                         Visual="{StaticResource appbar_page_search}" />
-                        </Rectangle.OpacityMask>
-                    </Rectangle>
-                    <TextBlock Margin="4 0 0 0"
-                   VerticalAlignment="Center"
-                   Text="Help" />
-                </StackPanel>
-            </Button>
-        </Controls:WindowCommands>
-    </Controls:MetroWindow.RightWindowCommands>
 
 </Controls:MetroWindow>

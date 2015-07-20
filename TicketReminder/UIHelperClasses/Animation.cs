@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Animation;
 
-namespace TicketReminderLibrary
+namespace TicketReminder
 {
     public class Animation
     {
-        DoubleAnimation _animation;
+        private DoubleAnimation _animation;
 
         public Animation() { _animation = new DoubleAnimation(); }
 
@@ -20,7 +20,6 @@ namespace TicketReminderLibrary
         {
             _animation.From = element.Opacity;
             _animation.To = 0.2;
-            //_oa.RepeatBehavior = RepeatBehavior.Forever;
             _animation.AutoReverse = false;
             _animation.Duration = new Duration(TimeSpan.FromSeconds(1.2));
             _animation.Completed += OnClose;
@@ -31,17 +30,6 @@ namespace TicketReminderLibrary
         private void OnClose(object sender, EventArgs e)
         {
             Environment.Exit(0);
-        }
-
-        public void SlowLoadButton(UIElement button)
-        {
-            _animation.From = button.Opacity;
-            _animation.To = 0.0;
-            //_oa.RepeatBehavior = RepeatBehavior.Forever;
-            _animation.AutoReverse = true;
-            _animation.Duration = new Duration(TimeSpan.FromMilliseconds(800d));
-
-            button.BeginAnimation(UIElement.OpacityProperty, _animation);
         }
     }
 }

@@ -22,13 +22,13 @@ namespace TicketReminder.DataClasses
         /// <param name="toPlace">Place - end point of route</param>
         /// <param name="date">Date of route</param>
         /// <returns></returns>
-        public static List<Train> GetAllTrainsByRouteInfo(string fromPlace, string toPlace, string date)
+        public static List<Train> GetAllTrainsByRouteInfo(string fromPlace, string toPlace, string date, bool isReserve, CarType reservePriority)
         {
             List<Train> trains = new List<Train>();
             string[] trainsNumbers = Parser.GetTrainsNumbers(fromPlace, toPlace, date);
             for (int i = 0; i < trainsNumbers.Length; i++)
             {
-                trains.Add(Parser.GetAllTrainInfo(fromPlace, toPlace, date, trainsNumbers[i], i));
+                trains.Add(Parser.GetAllTrainInfo(fromPlace, toPlace, date, trainsNumbers[i], i, isReserve, reservePriority));
             }
             return trains;
         }
@@ -42,9 +42,9 @@ namespace TicketReminder.DataClasses
         /// <param name="trainNumber">Train number on route</param>
         /// <param name="trainIndexInList">Index of train in list that generates in runtime fro dprc server. Helper field.</param>
         /// <returns></returns>
-        public static Train GetAllTrainInfo(string fromPlace, string toPlace, string date, string trainNumber, int trainIndexInList)
+        public static Train GetAllTrainInfo(string fromPlace, string toPlace, string date, string trainNumber, int trainIndexInList, bool isReserve, CarType reservePriority)
         {
-            return Parser.GetAllTrainInfo(fromPlace, toPlace, date, trainNumber, trainIndexInList);
+            return Parser.GetAllTrainInfo(fromPlace, toPlace, date, trainNumber, trainIndexInList, isReserve, reservePriority);
         }
 
         /// <summary>

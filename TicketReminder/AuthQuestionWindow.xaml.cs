@@ -15,10 +15,9 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TicketReminder.Showcase;
-using TicketReminderLibrary;
 using TicketReminder.HelperClasses;
 using DprcParser;
-//using Hardcodet.Wpf.TaskbarNotification;
+using System.Windows.Threading;
 
 namespace TicketReminder
 {
@@ -27,11 +26,14 @@ namespace TicketReminder
     /// </summary>
     public partial class AuthQuestionWindow : Window
     {
-        //TaskbarIcon iconF = new TaskbarIcon();
-        Animation _animation = new Animation();
-        DoubleAnimation _anime;
-        int c = 1;
-        int countWindow = 1;
+
+        public static AuthQuestionWindow Instance { get; private set; }
+
+        private static string[] TransitionEffects = new[] { "Fade" };
+        private string TransitionType;
+        private int EffectIndex = 0;
+        private Animation _animation = new Animation();
+        private DispatcherTimer timer;
 
         public AuthQuestionWindow()
         {
@@ -41,6 +43,14 @@ namespace TicketReminder
 
         private void Load()
         {
+            Instance = this;
+
+            timer = new DispatcherTimer();
+            timer.Interval = new TimeSpan(0, 0, 2);
+            timer.IsEnabled = true;
+            timer.Tick += timer_Tick;
+            timer.Start();
+
             if (Properties.Settings.Default.UserDprcGovUaEmail != "" &&
                     Properties.Settings.Default.UserDprcGovUaPassword != "")
             {
@@ -52,32 +62,28 @@ namespace TicketReminder
             else
             {
                 _animation.Initialize(this);
-                SlowLoadButton(btnNextStep);
-                SlowLoadButton(btnRegistration);
+                btnNextStep.Visibility = System.Windows.Visibility.Visible;
 
-                UserNotification noti = new UserNotification();
-
-                Sound.Location = Environment.CurrentDirectory + "\\Sounds\\Iphone_Ringtone_freetone.at.ua.mp3";
-                Sound sound = new Sound(Sound.Location);
-
-                noti.MainText.Text = "Ticket";
-                noti.HeaderBalloon.Text = "New ticket:";
-                noti.AllUnReadMessagesCount.Text = DateTime.Now.ToString();
+                // Slide loading controls
+                SlideLoad(imageFly);
+                SlideLoad(imageTrain);
             }
-
-            //sound.PlaySound();
-            //MyNotification.ShowCustomBalloon(noti, PopupAnimation.Slide, 5000);
-            
-            //AppSettings app = AppSettings.Instance;
         }
 
+        void timer_Tick(object sender, EventArgs e)
+        {
+            SlideLoad(btnNextStep);
+            SlideLoad(btnRegistration);
+            timer.Stop();
+            timer.IsEnabled = false;
+        }
+
+        #region Buttons Click Events
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
             RegisterBrowser registerBrowser = new RegisterBrowser();
             registerBrowser.ShowDialog();
         }
-
-
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
@@ -85,19 +91,9 @@ namespace TicketReminder
             _animation.SlowCloseWindow(this);
         }
 
-        private void OnClose(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnNextStep_Click(object sender, RoutedEventArgs e)
         {
-
-            Sound sound = new Sound(Sound.Location);
-            sound.PlaySound();
-
             btnNextStep.Visibility = System.Windows.Visibility.Collapsed;
-
             btnClose.Visibility = System.Windows.Visibility.Visible;
             btnSignIn.Visibility = System.Windows.Visibility.Visible;
             btnRegistration.Visibility = System.Windows.Visibility.Collapsed;
@@ -105,81 +101,16 @@ namespace TicketReminder
             canvasSignIn.Visibility = System.Windows.Visibility.Visible;
         }
 
-        #region Animation 
-        public void SlowLoadButton(Button button)
-        {
-            _anime = new DoubleAnimation();
-            _anime.From = Opacity;
-            _anime.To = 0.0;
-            //_oa.RepeatBehavior = RepeatBehavior.Forever;
-            _anime.AutoReverse = true;
-            _anime.Duration = new Duration(TimeSpan.FromMilliseconds(1000d));
-
-            button.BeginAnimation(OpacityProperty, _anime);
-        }
-        #endregion
-
         private void btnRegistration_Click(object sender, RoutedEventArgs e)
         {
-            new RegisterBrowser().ShowDialog();
-            AppWindow.ActualWindow = this;
-            //this.Hide();
-        }
-
-        #region MenuItems in Tray. Code behind
-
-        private void menuShowSettingsApp_Click(object sender, RoutedEventArgs e)
-        {
-            var win = AppWindow.IsWindowOpen<SettingsAppWindow>();
-
-            if (win != null)
-                win.Focus();
-            else
-            {
-                win = new SettingsAppWindow();
-                win.Show();
-            }  
-
-        }
-
-        private void menuStatistic_Click(object sender, RoutedEventArgs e)
-        {
-            var win = AppWindow.IsWindowOpen<TicketReminder.Windows.StatisticWindow>();
-
-            if (win != null)
-                win.Focus();
-            else
-            {
-                win = new TicketReminder.Windows.StatisticWindow();
-                win.Show();
-            }  
-        }
-
-        private void menuSearchTicket_Click(object sender, RoutedEventArgs e)
-        {
-            //ShowWindow<MainWindow>();
-
-            var win = AppWindow.IsWindowOpen<MainWindow>();
-
-            if (win != null)
-                win.Focus();
-            else
-            {
-                win = new MainWindow();
-                win.Show();
-            }
-        }
-
-        private void menuExit_Click(object sender, RoutedEventArgs e)
-        {
-            MyNotification.Visibility = System.Windows.Visibility.Collapsed;
-            Environment.Exit(0);
+            new TicketReminder.Windows.MainAppWindow().Show();
+            this.Close();
         }
 
         private void btnSignIn_Click(object sender, RoutedEventArgs e)
         {
             if (tbLogin.Text == "" || tbPass.Password == "")
-                MessageBox.Show("Неверно указан логин или пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Неверно указан логин или пароль!", "Ошибка", MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             else
             {
                 try
@@ -190,26 +121,72 @@ namespace TicketReminder
                     SettingsWindow settingsWindow = new SettingsWindow(true);
                     settingsWindow.ShowDialog();
                 }
-                catch(UnauthorizedAccessException)
+                catch (UnauthorizedAccessException)
                 {
-                    MessageBox.Show("Ошибка авторизации!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Ошибка авторизации!", "Ошибка", MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                 }
             }
         }
-
-        //public void ShowWindow<T>() where T: Window
-        //{
-        //    T item = (T)Activator.CreateInstance(typeof(T));
-        //    var win = AppWindow.IsWindowOpen<T>();
-
-        //    if (win != null)
-        //        win.Focus();
-        //    else
-        //    {
-        //        win = item;
-        //        win.Show();
-        //    }
-        //}
         #endregion
+
+        #region Animation Method
+        public void SlideLoad(FrameworkElement element)
+        {
+            try
+            {
+                TransitionType = TransitionEffects[EffectIndex].ToString();
+                Storyboard StboardFadeOut = (Resources[string.Format("{0}Out", TransitionType.ToString())] as Storyboard).Clone();
+                StboardFadeOut.Begin(element);
+                Storyboard StboardFadeIn = Resources[string.Format("{0}In", TransitionType.ToString())] as Storyboard;
+                StboardFadeIn.Begin(element);
+            }
+            catch (Exception) { }
+        }
+        #endregion
+
+        #region MenuItems in Tray. Code behind
+
+        private void menuShowSettingsApp_Click(object sender, RoutedEventArgs e)
+        {
+            var win = AppWindow.IsWindowOpen<SettingsAppWindow>();
+            if (win != null)
+                win.Focus();
+            else
+            {
+                win = new SettingsAppWindow();
+                win.Show();
+            }
+
+        }
+        private void menuSearchTicket_Click(object sender, RoutedEventArgs e)
+        {
+            var win = AppWindow.IsWindowOpen<MainWindow>();
+            if (win != null)
+                win.Focus();
+            else
+            {
+                win = new MainWindow();
+                win.Show();
+            }
+        }
+        private void menuExit_Click(object sender, RoutedEventArgs e)
+        {
+            MyNotification.Visibility = System.Windows.Visibility.Collapsed;
+            Environment.Exit(0);
+        }
+        private void menuMainWindow_Click(object sender, RoutedEventArgs e)
+        {
+            var win = AppWindow.IsWindowOpen<TicketReminder.Windows.MainAppWindow>();
+            if (win != null)
+                win.Focus();
+            else
+            {
+                win = new TicketReminder.Windows.MainAppWindow();
+                win.Show();
+            }
+            if (win != null && win.Focus() == false)
+                win.Show();
+        }
+        #endregion
+        }
     }
-}

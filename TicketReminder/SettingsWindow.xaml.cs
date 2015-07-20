@@ -12,7 +12,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
 namespace TicketReminder
 {
 
@@ -59,7 +58,8 @@ namespace TicketReminder
         ///WHAT IS???
         private void passwordBoxVkPass_LostFocus(object sender, RoutedEventArgs e)
         {
-            passwordBoxVkPass.Password = "123456789";
+            if (passwordBoxVkPass.Password == "")
+                passwordBoxVkPass.Password = "123456789";
         }
 
         private void passwordBoxVkPass_GotFocus(object sender, RoutedEventArgs e)
@@ -76,6 +76,18 @@ namespace TicketReminder
                 new MainWindow().Show();
                 this.Close();
             }
+        }
+
+        private void passwordBoxEmailPass_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (passwordBoxEmailPass.Password == "123456789")
+                passwordBoxEmailPass.Password = "";  
+        }
+
+        private void passwordBoxEmailPass_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (passwordBoxEmailPass.Password == "")
+                passwordBoxEmailPass.Password = "123456789";
         }
     }
 }

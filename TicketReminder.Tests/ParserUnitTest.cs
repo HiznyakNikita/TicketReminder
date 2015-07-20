@@ -46,7 +46,7 @@ namespace TicketReminder.Tests
         {
             //CHANGE DATE OR TRAIN NUMBER IN LIST IF TEST IS FAILED
             //Act - get train info
-            Train train = Parser.GetAllTrainInfo("КИЇВ-ПАСАЖИРСЬКИЙ", "ЗАПОРІЖЖЯ 1", "2015-07-02", "072К", 2);
+            Train train = Parser.GetAllTrainInfo("КИЇВ-ПАСАЖИРСЬКИЙ", "ЗАПОРІЖЖЯ 1", "2015-07-02", "072К", 2,false,CarType.Coupe);
 
             //Assert check train object if it is null
             Assert.IsNotNull(train);

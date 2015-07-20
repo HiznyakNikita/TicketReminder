@@ -55,6 +55,7 @@
     <Compile Include="DataClasses\CarType.cs" />
     <Compile Include="DataClasses\PlaceType.cs" />
     <Compile Include="DataClasses\Train.cs" />
+    <Compile Include="DataClasses\User.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

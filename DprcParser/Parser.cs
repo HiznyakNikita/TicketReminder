@@ -186,7 +186,7 @@ namespace DprcParser
         /// <param name="carType">Route carType</param>
         /// <param name="trainNumberIdInList">helper int for parsing train in html table</param>
         /// </summary>
-        public static Train GetAllTrainInfo(string fromPlace, string toPlace, string date, string trainNumber, int trainNumberIdInList)
+        public static Train GetAllTrainInfo(string fromPlace, string toPlace, string date, string trainNumber, int trainNumberIdInList, bool isReserve, CarType reservePriority)
         {
             Train train = new Train()
             {
@@ -195,6 +195,7 @@ namespace DprcParser
                 Date = date,
                 Cars = new List<Car>()
             };
+            bool isAlreadyReserve = false;
             string fromPlaceId = GetPointId(fromPlace);
             string toPlaceId = GetPointId(toPlace);
             string getPage = GetHttp("https://dprc.gov.ua/show.php?transport_type=2&src=" + fromPlaceId + "&dst=" + toPlaceId + "&dt=" + date + "&ret_dt=2001-01-01&ps=ec_privat", Encoding.GetEncoding("utf-8"));
@@ -213,6 +214,16 @@ namespace DprcParser
                 double Price = Convert.ToDouble(node.ChildNodes[13].InnerText.Substring(0, node.ChildNodes[13].InnerText.IndexOf('&')).Replace('.', ','));
                 Car car = new Car(Number, HighCoupeCount, LowCoupeCount, HighSideCount, LowSideCount, Price, Type);
                 train.Cars.Add(car);
+                if (isReserve && car.Type == reservePriority && !isAlreadyReserve)
+                {
+                    ReserveTicket(trainNumberIdInList, PageGeneral, Convert.ToInt32(node.Attributes["id"].ToString().Substring(5, node.Attributes["id"].Value.ToString().Length - 5)));
+                    isAlreadyReserve = true;
+                }
+            }
+            if(isReserve && !isAlreadyReserve)
+            {
+                ReserveTicket(trainNumberIdInList, PageGeneral, Convert.ToInt32(nodeCarRows[0].Attributes["id"].ToString().Substring(5, nodeCarRows[0].Attributes["id"].Value.ToString().Length - 5)));
+                isAlreadyReserve = true;
             }
             return train;
         }

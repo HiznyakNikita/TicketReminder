@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TicketReminder.DataClasses;
 
 namespace TicketReminder
 {
@@ -23,41 +24,6 @@ namespace TicketReminder
         public SearchParametersWindow()
         {
             InitializeComponent();
-        }
-
-        private void cmbBoxCarType_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            switch (cmbBoxCarType.Text)
-            {
-                case "Люкс":
-                    cmbBoxPlaceType.IsEnabled = false;
-                    lblPlaceType.IsEnabled = false;
-                    break;
-                case "Купэ фирменное":
-                    cmbBoxPlaceType.Items.Add("Нижнее");
-                    cmbBoxPlaceType.Items.Add("Верхнее");
-                    break;
-                case "Купэ":
-                    cmbBoxPlaceType.Items.Add("Нижнее");
-                    cmbBoxPlaceType.Items.Add("Верхнее");
-                    break;
-                case "Плацкарт фирменный":
-                    cmbBoxPlaceType.Items.Add("Нижнее");
-                    cmbBoxPlaceType.Items.Add("Верхнее");
-                    cmbBoxPlaceType.Items.Add("Нижнее боковое");
-                    cmbBoxPlaceType.Items.Add("Верхнее боковое");
-                    break;
-                case "Плацкарт":
-                    cmbBoxPlaceType.Items.Add("Нижнее");
-                    cmbBoxPlaceType.Items.Add("Верхнее");
-                    cmbBoxPlaceType.Items.Add("Нижнее боковое");
-                    cmbBoxPlaceType.Items.Add("Верхнее боковое");
-                    break;
-                case "Сидя":
-                    cmbBoxPlaceType.IsEnabled = false;
-                    lblPlaceType.IsEnabled = false;
-                    break;
-            }
         }
 
         private void checkBoxReserve_Unchecked(object sender, RoutedEventArgs e)
@@ -74,16 +40,86 @@ namespace TicketReminder
 
         private void btnSaveChanges_Click(object sender, RoutedEventArgs e)
         {
-            if (cmbBoxCarType.SelectedItem != null)
-                SearchSettings.Instance.CarType = cmbBoxCarType.Text;
+            if (lstBoxCarType.SelectedItems != null)
+            {
+                List<CarType> carTypes = new List<CarType>();
+                foreach (var item in lstBoxCarType.SelectedItems)
+                {
+                    switch(item.ToString())
+                    {
+                        case "Люкс":
+                            carTypes.Add(CarType.Luxe);
+                            break;
+                        case "Купэ фирменное":
+                            carTypes.Add(CarType.CoupeFirm);
+                            break;
+                        case "Купэ":
+                            carTypes.Add(CarType.Coupe);
+                            break;
+                        case "Плацкарт фирменный":
+                            carTypes.Add(CarType.ReservedSeatFirm);
+                            break;
+                        case "Плацкарт":
+                            carTypes.Add(CarType.ReservedSeat);
+                            break;
+                        case "Сидя":
+                            carTypes.Add(CarType.Seat);
+                            break;
+                    }
+                }
+                SearchSettings.Instance.CarTypes = carTypes;
+            }
             if (cmbBoxCarTypeReserve.SelectedItem != null)
-                SearchSettings.Instance.ReservePriority = cmbBoxCarTypeReserve.Text;
+            {
+                switch (cmbBoxCarTypeReserve.Text)
+                {
+                    case "Люкс":
+                        SearchSettings.Instance.ReservePriority = CarType.Luxe;
+                        break;
+                    case "Купэ фирменное":
+                        SearchSettings.Instance.ReservePriority = CarType.CoupeFirm;
+                        break;
+                    case "Купэ":
+                        SearchSettings.Instance.ReservePriority = CarType.Coupe;
+                        break;
+                    case "Плацкарт фирменный":
+                        SearchSettings.Instance.ReservePriority = CarType.ReservedSeatFirm;
+                        break;
+                    case "Плацкарт":
+                        SearchSettings.Instance.ReservePriority = CarType.ReservedSeat;
+                        break;
+                    case "Сидя":
+                        SearchSettings.Instance.ReservePriority = CarType.Seat;
+                        break;
+                }
+            }
             if (checkBoxReserve.IsChecked == true)
                 SearchSettings.Instance.EnableReserve = true;
             else
                 SearchSettings.Instance.EnableReserve = false;
-            if (cmbBoxPlaceType.SelectedItem != null)
-                SearchSettings.Instance.PlaceType = cmbBoxPlaceType.Text;
+            if (lstBoxPlaceType.SelectedItems != null)
+            {
+                List<PlaceType> placeTypes = new List<PlaceType>();
+                foreach (var item in lstBoxPlaceType.SelectedItems)
+                {
+                    switch(item.ToString())
+                    {
+                        case "Нижнее купе":
+                            placeTypes.Add(PlaceType.LowCoupe);
+                            break;
+                        case "Верхнее купе":
+                            placeTypes.Add(PlaceType.HighCoupe);
+                            break;
+                        case "Нижнее боковое":
+                            placeTypes.Add(PlaceType.LowSide);
+                            break;
+                        case "Верхнее боковое":
+                            placeTypes.Add(PlaceType.HighSide);
+                            break;
+                    }
+                }
+                SearchSettings.Instance.PlaceTypes = placeTypes;
+            }
             if (tbCheckPeriod.Text != "")
                 SearchSettings.Instance.CheckPeriod = Convert.ToInt32(tbCheckPeriod.Text);
             if(cmbBoxNotifyBy.SelectedItem!= null)

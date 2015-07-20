@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicketReminder.DataClasses;
 using TicketReminder.HelperClasses;
 
 namespace TicketReminder
@@ -26,10 +27,10 @@ namespace TicketReminder
             }
         }
 
-        public string CarType { get; set; }
-        public string PlaceType { get; set; }
+        public List<CarType> CarTypes { get; set; }
+        public List<PlaceType> PlaceTypes { get; set; }
         public bool EnableReserve { get; set; }
-        public string ReservePriority { get; set; }
+        public CarType ReservePriority { get; set; }
         public int CheckPeriod { get; set; }
         public INotifier Notifier { get; set; }
     }

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="TicketReminder.Showcase.TicketNotify"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             Height="50" Width="64">
+    <Grid>
+        <Image HorizontalAlignment="Left" VerticalAlignment="Top" Source="/TicketReminder;component/Images/ticket.png" Height="45" Width="67" Margin="0,5,0,0"/>
+
+        <Border x:Name="borderNotif" BorderBrush="White" BorderThickness="2" Visibility="{Binding Path=IsNewTicket}" CornerRadius="50" Background="#FF6AB246"
+                HorizontalAlignment="Left" Height="27" Margin="33,0,0,0" VerticalAlignment="Top" Width="27">
+
+            <Label x:Name="txtCountTicket"  Content="{Binding ElementName=txtCountTicket, Path=TicketCount}" FontSize="12" Foreground="White"  DataContextChanged="txtCountTicket_DataContextChanged" Margin="-1,-2,1,0" />
+        </Border>
+
+    </Grid>
+</UserControl>

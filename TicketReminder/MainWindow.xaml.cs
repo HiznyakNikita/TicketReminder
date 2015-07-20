@@ -49,7 +49,7 @@ namespace TicketReminder
             int count = 0;
             if (cmbBoxTrainNumber.Text == "Все поезда")
             {
-                List<Train> trains = Train.GetAllTrainsByRouteInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()));
+                List<Train> trains = Train.GetAllTrainsByRouteInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()), SearchSettings.Instance.EnableReserve, SearchSettings.Instance.ReservePriority);
                 foreach (var train in trains)
                     //count += GetCountPlaces(train);
                 if (lastCount != count)
@@ -60,7 +60,7 @@ namespace TicketReminder
             }
             else
             {
-                Train train = Train.GetAllTrainInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()), cmbBoxTrainNumber.Text, cmbBoxTrainNumber.SelectedIndex);
+                Train train = Train.GetAllTrainInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePickerDate.SelectedDate.Value.ToShortDateString()), cmbBoxTrainNumber.Text, cmbBoxTrainNumber.SelectedIndex, SearchSettings.Instance.EnableReserve, SearchSettings.Instance.ReservePriority);
                 //count = //GetCountPlaces(train);
                 if (lastCount != count)
                 {
