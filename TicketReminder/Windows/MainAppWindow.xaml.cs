@@ -271,6 +271,7 @@ namespace TicketReminder.Windows
                     }});
                     SetToolTipNotify();
                     lastCount = count;
+                    TicketsViewModel t = new TicketsViewModel(train.Cars);
                 }
             }
         }
@@ -291,6 +292,10 @@ namespace TicketReminder.Windows
                 n.Notify(args);
             new Notify().ShowNotify(args);
             SetToolTipNotify();
+            List<Car> cars = new List<Car>();
+            foreach (var t in trains)
+                cars.AddRange(t.Cars);
+            TicketsViewModel ticketViewModel = new TicketsViewModel(cars);
         }
 
         private void SetToolTipNotify()

@@ -13,5 +13,6 @@ namespace TicketReminder.HelperClasses
         public string Date { get; set; }
         public string PlacesCount { get; set; }
         public string TrainNumber { get; set; }
+        public bool IsReserved { get; set; }
     }
 }

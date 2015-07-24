@@ -134,15 +134,15 @@
             <TabItem Header="Statistic" Margin="10,257,0,-257">
                 <Grid Background="#FFFFFF" Margin="53,-3,-3,-3">
                     <metroChart:PieChart
-                        ChartTitle="Ticket pie chart"
-                        ChartSubTitle="Chart of buying ticket statistic"
+                        ChartTitle="Ticket by wagon types"
+                        ChartSubTitle="Count of places by wagons"
                         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}" 
                         Height="Auto" Margin="10,10,0,73" Width="302" HorizontalAlignment="Left" >
                         <metroChart:PieChart.Series>
                             <metroChart:ChartSeries
                                 SeriesTitle="Tickets"
-                                DisplayMember="Name"
-                                ValueMember="Count"
+                                DisplayMember="Type"
+                                ValueMember="PlacesCount"
                                 ItemsSource="{Binding Path=Tickets}" />
                         </metroChart:PieChart.Series>
                     </metroChart:PieChart>

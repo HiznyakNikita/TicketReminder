@@ -15,6 +15,7 @@ namespace TicketReminder.DataClasses
         public int HighSideCount { get; set; }
         public int LowSideCount { get; set; }
         public double Price { get; set; }
+        public int PlacesCount { get; set; }
 
         public Car(int number, int highCoupeCount, int lowCoupeCount, int highSideCount, int lowSideCount, double price, CarType type)
         {
@@ -25,6 +26,7 @@ namespace TicketReminder.DataClasses
             HighSideCount = highSideCount;
             LowSideCount = lowSideCount;
             Price = price;
+            PlacesCount = highCoupeCount + lowCoupeCount + highSideCount + lowSideCount;
         }
     }
 }

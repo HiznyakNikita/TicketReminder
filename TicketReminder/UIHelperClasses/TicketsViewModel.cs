@@ -4,19 +4,17 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicketReminder.DataClasses;
 
 namespace TicketReminder.UIHelperClasses
 {
     public class TicketsViewModel
     {
-        public ObservableCollection<Sound> Tickets { get; private set; }
+        public IList<Car> Tickets { get; private set; }
 
-        public TicketsViewModel()
+        public TicketsViewModel(IList<Car> tickets)
         {
-            Tickets = new ObservableCollection<Sound>();
-            Tickets.Add(new Sound() { Name = "Kiev - London", Count = 70 });
-            Tickets.Add(new Sound() { Name = "Kiev - Berlin", Count = 40 });
-            Tickets.Add(new Sound() { Name = "Kiev - New-York", Count = 35 });
+            Tickets = tickets;
         }
 
         private object selectedItem = null;

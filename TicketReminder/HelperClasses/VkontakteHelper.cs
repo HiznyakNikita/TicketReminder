@@ -38,7 +38,11 @@ namespace TicketReminder
         {
             string message = "";
             foreach (var arg in args)
+            {
                 message += arg.From + " - " + arg.To + " на " + arg.Date + " Поезд: " + arg.TrainNumber + " Количество мест: " + arg.PlacesCount + Environment.NewLine;
+                if (arg.IsReserved)
+                    message += "  Откройте приложение или dprc.gov.ua для покупки зарезервированного билета";
+            }
             return message;
         }
 

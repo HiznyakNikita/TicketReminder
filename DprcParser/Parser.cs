@@ -217,12 +217,13 @@ namespace DprcParser
                 if (isReserve && car.Type == reservePriority && !isAlreadyReserve)
                 {
                     ReserveTicket(trainNumberIdInList, PageGeneral, Convert.ToInt32(node.Attributes["id"].Value.ToString().Substring(6, node.Attributes["id"].Value.ToString().Length - 6)));
+                    
                     isAlreadyReserve = true;
                 }
             }
             if(isReserve && !isAlreadyReserve)
             {
-                ReserveTicket(trainNumberIdInList, PageGeneral, Convert.ToInt32(nodeCarRows[0].Attributes["id"].ToString().Substring(5, nodeCarRows[0].Attributes["id"].Value.ToString().Length - 5)));
+                ReserveTicket(trainNumberIdInList, PageGeneral, Convert.ToInt32(nodeCarRows[0].Attributes["id"].Value.ToString().Substring(6, nodeCarRows[0].Attributes["id"].Value.ToString().Length - 6)));
                 isAlreadyReserve = true;
             }
             return train;
@@ -283,13 +284,13 @@ namespace DprcParser
             HtmlAgilityPack.HtmlDocument TablePage = new HtmlAgilityPack.HtmlDocument();
             TablePage.LoadHtml(tablePage);
             var placeNode = TablePage.DocumentNode.Descendants("td").Where(d => d.Attributes.Contains("class") && d.Attributes["class"].Value.Contains("free_seat")).First();
-            ReserveTicketAction(placeNode.InnerText, tos, info.GuidIdx);
+            ReserveTicketAction(placeNode.InnerText, tos, info.GuidIdx, carId.ToString());
         }
 
         //method for reserve ticket by seat number
-        private static void ReserveTicketAction(string seatNumber, string tosNumber, string segmentId)
+        private static void ReserveTicketAction(string seatNumber, string tosNumber, string segmentId, string carId)
         {
-            string reservePage = GetHttp("https://dprc.gov.ua/invoice.php?bedding_flag=on&ticket_0=1000&seat_0=" + seatNumber + "&priv_0=full&date_0=01.01.1600&surname_0=UZ&name_0=HELPER&i_aggreed=1&segment_id=" + segmentId + "&tos_id=" + tosNumber + "&transport_type=2&src_place=&dst_place=&pay_type=ec_privat&car_id=8&apn=&user_data=&apn_back_ref=&lock_type=bought&reserve_places=do", Encoding.GetEncoding("windows-1251"));
+            string reservePage = GetHttp("https://dprc.gov.ua/invoice.php?bedding_flag=on&ticket_0=1000&seat_0=" + seatNumber + "&priv_0=full&date_0=01.01.1600&surname_0=UZ&name_0=HELPER&i_aggreed=1&segment_id=" + segmentId + "&tos_id=" + tosNumber + "&transport_type=2&src_place=&dst_place=&pay_type=ec_privat&car_id=" + carId + "&apn=&user_data=&apn_back_ref=&lock_type=bought&reserve_places=do", Encoding.GetEncoding("windows-1251"));
             HtmlAgilityPack.HtmlDocument ReserveTicketPage = new HtmlAgilityPack.HtmlDocument();
             ReserveTicketPage.LoadHtml(reservePage);
             var node = ReserveTicketPage.DocumentNode.Descendants("input").Where(d => d.Attributes.Contains("onclick") && d.Attributes["onclick"].Value.Contains("javascript:window.location.href='cancel.php?invoice=")).First();
