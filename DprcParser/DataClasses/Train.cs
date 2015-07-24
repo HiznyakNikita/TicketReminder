@@ -13,7 +13,17 @@ namespace TicketReminder.DataClasses
         public string Number { get; set; }
         public string Route { get; set; }
         public string Date { get; set; }
-        public int PlacesCount { get; set; }
+        public int PlacesCount 
+        { 
+            get
+            {
+                return GetPlacesCount();
+            }
+            set
+            {
+                PlacesCount = value;
+            }
+        }
 
         /// <summary>
         /// Method for getting info about all trains by route from fromPlace to toPlace on date

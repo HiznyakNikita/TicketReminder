@@ -11,10 +11,12 @@ namespace TicketReminder.UIHelperClasses
     public class TicketsViewModel
     {
         public IList<Car> Tickets { get; private set; }
+        public IList<Train> Trains { get; private set; }
 
-        public TicketsViewModel(IList<Car> tickets)
+        public TicketsViewModel(IList<Car> tickets, IList<Train> trains)
         {
             Tickets = tickets;
+            Trains = trains;
         }
 
         private object selectedItem = null;

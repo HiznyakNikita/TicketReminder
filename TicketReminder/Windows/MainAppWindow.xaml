@@ -149,15 +149,15 @@
 
 
                     <metroChart:ClusteredBarChart 
-                        ChartTitle="Profit of the month"
-                        ChartSubTitle="Chart of buying ticket statistic"
+                        ChartTitle="Places by trains"
+                        ChartSubTitle=""
                         SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}" Margin="159,10,10,73" >
                         <metroChart:ClusteredBarChart.Series>
                             <metroChart:ChartSeries
                                 SeriesTitle="Tickets"
-                                DisplayMember="Name"
-                                ValueMember="Count"
-                                ItemsSource="{Binding Path=Tickets}" />
+                                DisplayMember="Number"
+                                ValueMember="PlacesCount"
+                                ItemsSource="{Binding Path=Trains}" />
                         </metroChart:ClusteredBarChart.Series>
                     </metroChart:ClusteredBarChart>
                     

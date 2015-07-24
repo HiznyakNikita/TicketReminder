@@ -43,7 +43,6 @@ namespace TicketReminder.Windows
             {
 
                 Load();
-                this.DataContext = new TicketsViewModel(); // To load charts 
             };
             if (Properties.Settings.Default.UserVkLogin != "" && Properties.Settings.Default.UserVkPassword != "")
             {
@@ -214,18 +213,20 @@ namespace TicketReminder.Windows
                 List<Train> trains = Train.GetAllTrainsByRouteInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePicker.SelectedDate.Value.ToShortDateString()), SearchSettings.Instance.EnableReserve, SearchSettings.Instance.ReservePriority);
                 foreach (var train in trains)
                 {
-                    if (SearchSettings.Instance.PlaceTypes != null && SearchSettings.Instance.CarTypes != null)
+                    if (SearchSettings.Instance.PlaceTypes.Count != 0 && SearchSettings.Instance.CarTypes.Count != 0)
                     {
                         count = train.GetCountPlacesByCarAndPlaceTypes(SearchSettings.Instance.PlaceTypes, SearchSettings.Instance.CarTypes);
                     }
-                    else if (SearchSettings.Instance.PlaceTypes != null && SearchSettings.Instance.CarTypes == null)
+                    else if (SearchSettings.Instance.PlaceTypes.Count != 0 && SearchSettings.Instance.CarTypes.Count == 0)
                     {
                         count = train.GetCountPlacesByPlaceType(SearchSettings.Instance.PlaceTypes);
                     }
-                    else if (SearchSettings.Instance.PlaceTypes == null && SearchSettings.Instance.CarTypes != null)
+                    else if (SearchSettings.Instance.PlaceTypes.Count == 0 && SearchSettings.Instance.CarTypes.Count != 0)
                     {
                         count = train.GetCountPlacesByCarType(SearchSettings.Instance.CarTypes);
                     }
+                    else
+                        count = train.PlacesCount;
                 }
                 if (lastCount != count)
                 {
@@ -236,18 +237,20 @@ namespace TicketReminder.Windows
             else
             {
                 Train train = Train.GetAllTrainInfo(cmbBoxPointFrom.Text, cmbBoxPointTo.Text, Helper.ConvertDate(datePicker.SelectedDate.Value.ToShortDateString()), cmbBoxTrainNumber.Text, cmbBoxTrainNumber.SelectedIndex,SearchSettings.Instance.EnableReserve, SearchSettings.Instance.ReservePriority);
-                if (SearchSettings.Instance.PlaceTypes != null && SearchSettings.Instance.CarTypes != null)
+                if (SearchSettings.Instance.PlaceTypes.Count != 0 && SearchSettings.Instance.CarTypes.Count != 0)
                 {
                     count = train.GetCountPlacesByCarAndPlaceTypes(SearchSettings.Instance.PlaceTypes, SearchSettings.Instance.CarTypes);
                 }
-                else if (SearchSettings.Instance.PlaceTypes != null && SearchSettings.Instance.CarTypes == null)
+                else if (SearchSettings.Instance.PlaceTypes.Count != 0 && SearchSettings.Instance.CarTypes.Count == 0)
                 {
                     count = train.GetCountPlacesByPlaceType(SearchSettings.Instance.PlaceTypes);
                 }
-                else if (SearchSettings.Instance.PlaceTypes == null && SearchSettings.Instance.CarTypes != null)
+                else if (SearchSettings.Instance.PlaceTypes.Count == 0 && SearchSettings.Instance.CarTypes.Count != 0)
                 {
                     count = train.GetCountPlacesByCarType(SearchSettings.Instance.CarTypes);
                 }
+                else
+                    count = train.PlacesCount;
                 if (lastCount != count)
                 {
                     foreach (INotifier n in SearchSettings.Instance.Notifiers)
@@ -271,7 +274,8 @@ namespace TicketReminder.Windows
                     }});
                     SetToolTipNotify();
                     lastCount = count;
-                    TicketsViewModel t = new TicketsViewModel(train.Cars);
+                    TicketsViewModel t = new TicketsViewModel(train.Cars, null);
+                    this.DataContext = t;
                 }
             }
         }
@@ -295,7 +299,8 @@ namespace TicketReminder.Windows
             List<Car> cars = new List<Car>();
             foreach (var t in trains)
                 cars.AddRange(t.Cars);
-            TicketsViewModel ticketViewModel = new TicketsViewModel(cars);
+            TicketsViewModel ticketViewModel = new TicketsViewModel(cars, trains);
+            this.DataContext = ticketViewModel;
         }
 
         private void SetToolTipNotify()
