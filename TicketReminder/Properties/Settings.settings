@@ -15,7 +15,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="UserEmail" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">reminderticket@gmail.com</Value>
     </Setting>
     <Setting Name="VkAppId" Type="System.String" Scope="User">
       <Value Profile="(Default)">3921202</Value>

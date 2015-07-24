@@ -126,10 +126,18 @@ namespace TicketReminder
                     SearchSettings.Instance.CheckPeriod = Convert.ToInt32(tbCheckPeriod.Text);
                 if (lstBoxNotifyType.SelectedItems.Count > 0)
                 {
-                    if (lstBoxNotifyType.SelectedIndex == 0)
-                        SearchSettings.Instance.Notifier = new EmailHelper(Properties.Settings.Default.UserEmailPassword, Properties.Settings.Default.UserEmail, "Білети Укрзалізниця");
-                    else if (lstBoxNotifyType.SelectedIndex == 1)
-                        SearchSettings.Instance.Notifier = new VkontakteHelper();
+                    if (lstBoxNotifyType.SelectedItems.Count == 1)
+                    {
+                        if (lstBoxNotifyType.SelectedIndex == 0)
+                            SearchSettings.Instance.Notifiers.Add(new EmailHelper(Properties.Settings.Default.UserEmailPassword, Properties.Settings.Default.UserEmail, "Білети Укрзалізниця"));
+                        else if (lstBoxNotifyType.SelectedIndex == 1)
+                            SearchSettings.Instance.Notifiers.Add(new VkontakteHelper());
+                    }
+                    else
+                    {
+                        SearchSettings.Instance.Notifiers.Add(new EmailHelper(Properties.Settings.Default.UserEmailPassword, Properties.Settings.Default.UserDprcGovUaEmail, "Білети Укрзалізниця"));
+                        SearchSettings.Instance.Notifiers.Add(new VkontakteHelper());
+                    }
                 }
             }
             catch(Exception)

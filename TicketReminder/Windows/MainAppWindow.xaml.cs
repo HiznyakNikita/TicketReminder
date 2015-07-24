@@ -250,7 +250,9 @@ namespace TicketReminder.Windows
                 }
                 if (lastCount != count)
                 {
-                    SearchSettings.Instance.Notifier.Notify(new List<MessageArgs>{new MessageArgs
+                    foreach (INotifier n in SearchSettings.Instance.Notifiers)
+                    {
+                        n.Notify(new List<MessageArgs>{new MessageArgs
                     {
                         From = cmbBoxPointFrom.Text,
                         To = cmbBoxPointTo.Text,
@@ -258,6 +260,7 @@ namespace TicketReminder.Windows
                         TrainNumber = train.Number,
                         PlacesCount = count.ToString()
                     }});
+                    }
                     new Notify().ShowNotify(new List<MessageArgs>{new MessageArgs
                     {
                         From = cmbBoxPointFrom.Text,
@@ -284,7 +287,8 @@ namespace TicketReminder.Windows
                     TrainNumber = train.Number,
                     PlacesCount = train.PlacesCount.ToString()
                 });
-            SearchSettings.Instance.Notifier.Notify(args);
+            foreach (INotifier n in SearchSettings.Instance.Notifiers)
+                n.Notify(args);
             new Notify().ShowNotify(args);
             SetToolTipNotify();
         }

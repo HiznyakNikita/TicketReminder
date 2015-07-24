@@ -64,7 +64,9 @@ namespace TicketReminder
                 //count = //GetCountPlaces(train);
                 if (lastCount != count)
                 {
-                    SearchSettings.Instance.Notifier.Notify(new List<MessageArgs>{new MessageArgs
+                    foreach (INotifier n in SearchSettings.Instance.Notifiers)
+                    {
+                        n.Notify(new List<MessageArgs>{new MessageArgs
                     {
                         From = cmbBoxPointFrom.Text,
                         To = cmbBoxPointTo.Text,
@@ -72,6 +74,7 @@ namespace TicketReminder
                         TrainNumber = train.Number,
                         PlacesCount = train.PlacesCount.ToString()
                     }});
+                    }
                 }
             }
         }
@@ -88,7 +91,8 @@ namespace TicketReminder
                     TrainNumber = train.Number,
                     PlacesCount = train.PlacesCount.ToString()
                 });
-            SearchSettings.Instance.Notifier.Notify(args);
+            foreach (INotifier n in SearchSettings.Instance.Notifiers)
+                n.Notify(args);
         }
 
         //UNCOMMENT WHEN DO MULTIPLY SELECT COMBOBOXES

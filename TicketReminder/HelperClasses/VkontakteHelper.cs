@@ -38,7 +38,7 @@ namespace TicketReminder
         {
             string message = "";
             foreach (var arg in args)
-                message += arg.From + " - " + arg.To + " на " + arg.Date + "Поезд: " + arg.TrainNumber + " Количество мест: " + arg.PlacesCount + Environment.NewLine;
+                message += arg.From + " - " + arg.To + " на " + arg.Date + " Поезд: " + arg.TrainNumber + " Количество мест: " + arg.PlacesCount + Environment.NewLine;
             return message;
         }
 

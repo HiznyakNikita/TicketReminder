@@ -32,6 +32,7 @@ namespace TicketReminder
         public bool EnableReserve { get; set; }
         public CarType ReservePriority { get; set; }
         public int CheckPeriod { get; set; }
-        public INotifier Notifier { get; set; }
-    }
+        public List<INotifier> Notifiers = new List<INotifier>();
+
+        }
 }
