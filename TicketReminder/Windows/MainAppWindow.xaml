@@ -59,25 +59,25 @@
 
                     <Label x:Name="split4" Margin="10,254,10,243" BorderBrush="#E79344" BorderThickness="2" Height="2" />
 
-                    <TextBlock HorizontalAlignment="Left" FontSize="18" Margin="10,25,0,0" FontWeight="Medium" Foreground="#E79344"
+                    <TextBlock x:Name="textBlockNewTicketHeader" HorizontalAlignment="Left" FontSize="18" Margin="10,25,0,0" FontWeight="Medium" Foreground="#E79344"
                                TextWrapping="Wrap" Text="You have new ticket" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="From: " FontSize="16" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="103,66,0,0" TextWrapping="Wrap" Text="To: " FontSize="16" VerticalAlignment="Top"/>
 
                     <TextBlock HorizontalAlignment="Left" Margin="59,66,0,0" Foreground="#E79344" FontWeight="Medium"
-                               TextWrapping="Wrap" FontSize="16" Text="Kiev" VerticalAlignment="Top"/>
+                               TextWrapping="Wrap" FontSize="16" Text="" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="141,66,0,0" Foreground="#E79344" FontWeight="Medium"
-                    	TextWrapping="Wrap" FontSize="16" Text="Lviv" VerticalAlignment="Top"/>
+                    	TextWrapping="Wrap" FontSize="16" Text="" VerticalAlignment="Top"/>
 
                     <TextBlock HorizontalAlignment="Left" Margin="10,92,0,0" TextWrapping="Wrap"
-                               FontSize="16" Text="Ticket number: " VerticalAlignment="Top"/>
+                               FontSize="16" Text="Train number: " VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="136,92,0,0" Foreground="#E79344" FontWeight="Medium"
-                    	TextWrapping="Wrap" FontSize="16" Text="#123456235" VerticalAlignment="Top"/>
+                    	TextWrapping="Wrap" FontSize="16" Text="" VerticalAlignment="Top"/>
 
                     <TextBlock HorizontalAlignment="Left" Margin="10,118,0,0" TextWrapping="Wrap"
                     	FontSize="16" Text="Passanger place: " VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="136,118,0,0" Foreground="#E79344" FontWeight="Medium"
-                    	TextWrapping="Wrap" FontSize="16" Text="#25" VerticalAlignment="Top"/>
+                    	TextWrapping="Wrap" FontSize="16" Text="" VerticalAlignment="Top"/>
 
                     <Label x:Name="split5" Margin="10,54,10,443" BorderBrush="#E79344" BorderThickness="2" Height="2" />
 

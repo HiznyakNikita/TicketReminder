@@ -256,7 +256,7 @@ namespace TicketReminder.Windows
                         To = cmbBoxPointTo.Text,
                         Date = Helper.ConvertDate(datePicker.SelectedDate.Value.ToShortDateString()),
                         TrainNumber = train.Number,
-                        PlacesCount = train.PlacesCount.ToString()
+                        PlacesCount = count.ToString()
                     }});
                     new Notify().ShowNotify(new List<MessageArgs>{new MessageArgs
                     {
@@ -266,6 +266,7 @@ namespace TicketReminder.Windows
                         TrainNumber = train.Number,
                         PlacesCount = train.PlacesCount.ToString()
                     }});
+                    SetToolTipNotify();
                     lastCount = count;
                 }
             }
@@ -285,12 +286,22 @@ namespace TicketReminder.Windows
                 });
             SearchSettings.Instance.Notifier.Notify(args);
             new Notify().ShowNotify(args);
+            SetToolTipNotify();
+        }
+
+        private void SetToolTipNotify()
+        {
+            ToolTipNoTicket toolTipNoTicket = new ToolTipNoTicket();
+            toolTipNoTicket.HeaderText = "New ticket for you";
+            toolTipNoTicket.InfoText = "You have new ticket. For details go on ticket tab";
         }
 
         private void btnSearchSearchTabs_Click(object sender, RoutedEventArgs e)
         {
-
-
+            dispatcherTimer.Stop();
+            dispatcherTimer.Interval = new TimeSpan(0, SearchSettings.Instance.CheckPeriod,0);
+            dispatcherTimer.IsEnabled = true;
+            dispatcherTimer.Start();
         }
 
         private void btnHelpWindow_Click(object sender, RoutedEventArgs e)

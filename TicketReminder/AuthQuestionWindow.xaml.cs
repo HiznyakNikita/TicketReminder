@@ -18,6 +18,7 @@ using TicketReminder.Showcase;
 using TicketReminder.HelperClasses;
 using DprcParser;
 using System.Windows.Threading;
+using TicketReminder.Windows;
 
 namespace TicketReminder
 {
@@ -79,11 +80,6 @@ namespace TicketReminder
         }
 
         #region Buttons Click Events
-        private void btnRegister_Click(object sender, RoutedEventArgs e)
-        {
-            RegisterBrowser registerBrowser = new RegisterBrowser();
-            registerBrowser.ShowDialog();
-        }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
@@ -103,8 +99,8 @@ namespace TicketReminder
 
         private void btnRegistration_Click(object sender, RoutedEventArgs e)
         {
-            new TicketReminder.Windows.MainAppWindow().Show();
-            this.Close();
+            RegisterBrowser registerBrowser = new RegisterBrowser();
+            registerBrowser.ShowDialog();
         }
 
         private void btnSignIn_Click(object sender, RoutedEventArgs e)
@@ -118,8 +114,12 @@ namespace TicketReminder
                     Parser.Auth(tbLogin.Text, tbPass.Password);
                     Properties.Settings.Default.UserDprcGovUaEmail = tbLogin.Text;
                     Properties.Settings.Default.UserDprcGovUaPassword = tbPass.Password;
-                    SettingsWindow settingsWindow = new SettingsWindow(true);
-                    settingsWindow.ShowDialog();
+                    if (Properties.Settings.Default.UserEmail == "" && Properties.Settings.Default.UserVkLogin == "")
+                    {
+                        SettingsWindow settingsWindow = new SettingsWindow(true);
+                        settingsWindow.ShowDialog();
+                    }
+                    new MainAppWindow().Show();
                 }
                 catch (UnauthorizedAccessException)
                 {

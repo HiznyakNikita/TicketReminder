@@ -122,6 +122,8 @@ namespace TicketReminder.DataClasses
                     count += car.HighSideCount;
                 if (placeTypes.Contains(PlaceType.LowSide))
                     count += car.LowSideCount;
+                if (placeTypes.Count == 0 && car.Type == CarType.Seat)
+                    count += car.LowCoupeCount;
             }
             return count;
         }

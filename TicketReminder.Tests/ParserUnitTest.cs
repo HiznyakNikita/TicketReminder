@@ -12,7 +12,7 @@ namespace TicketReminder.Tests
         public void Can_Auth()
         {
             //Act - do authorization
-            Parser.Auth("nikita.ru96@mail.ru", "42354646");
+            Parser.Auth("nikita.ru96@mail.ru", "mpo5yy70");
 
             //Assert check cookies count 
             //Need value: 1
@@ -44,12 +44,29 @@ namespace TicketReminder.Tests
         [TestMethod]
         public void Can_GetAllTrainInfo()
         {
+            Parser.Auth("nikita.ru96@mail.ru", "mpo5yy70");
+
             //CHANGE DATE OR TRAIN NUMBER IN LIST IF TEST IS FAILED
             //Act - get train info
-            Train train = Parser.GetAllTrainInfo("КИЇВ-ПАСАЖИРСЬКИЙ", "ЗАПОРІЖЖЯ 1", "2015-07-02", "072К", 2,false,CarType.Coupe);
+            Train train = Parser.GetAllTrainInfo("КИЇВ-ПАСАЖИРСЬКИЙ", "ЗАПОРІЖЖЯ 1", "2015-10-12", "072К", 2,false,CarType.Coupe);
 
             //Assert check train object if it is null
-            Assert.IsNotNull(train);
+            Assert.AreNotEqual(train.Cars,0);
+        }
+
+        [TestMethod]
+        public void Can_ReserveTicket()
+        {
+            Parser.Auth("nikita.ru96@mail.ru", "mpo5yy70");
+
+            //Act - get train with reservation
+            Train train1 = Parser.GetAllTrainInfo("КИЇВ-ПАСАЖИРСЬКИЙ", "ЗАПОРІЖЖЯ 1", "2015-10-12", "072К", 2, true, CarType.Coupe);
+
+            //Assert check train reserved place
+            //If we had one reservation we couldn't get a train info again
+            Train train2 = Parser.GetAllTrainInfo("КИЇВ-ПАСАЖИРСЬКИЙ", "ЗАПОРІЖЖЯ 1", "2015-10-12", "072К", 2, false, CarType.Coupe);
+
+            Assert.Equals(train2.Cars, 0);
         }
     }
 }

@@ -38,22 +38,22 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(494, 371);
+            this.webBrowser1.Size = new System.Drawing.Size(514, 371);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // RegisterBrowser
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(494, 371);
+            this.ClientSize = new System.Drawing.Size(514, 371);
             this.Controls.Add(this.webBrowser1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(510, 410);
-            this.MinimumSize = new System.Drawing.Size(510, 410);
+            this.MaximumSize = new System.Drawing.Size(530, 410);
+            this.MinimumSize = new System.Drawing.Size(530, 410);
             this.Name = "RegisterBrowser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Регистрация";
+            this.Text = "Registration";
             this.Load += new System.EventHandler(this.RegisterBrowser_Load);
             this.ResumeLayout(false);
 

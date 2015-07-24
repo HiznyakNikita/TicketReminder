@@ -40,94 +40,101 @@ namespace TicketReminder
 
         private void btnSaveChanges_Click(object sender, RoutedEventArgs e)
         {
-            if (lstBoxCarType.SelectedItems != null)
+            try
             {
-                List<CarType> carTypes = new List<CarType>();
-                foreach (var item in lstBoxCarType.SelectedItems)
+                if (lstBoxCarType.SelectedItems != null)
                 {
-                    switch(item.ToString())
+                    List<CarType> carTypes = new List<CarType>();
+                    foreach (var item in lstBoxCarType.SelectedItems)
+                    {
+                        switch (item.ToString().Substring(item.ToString().IndexOf(":") + 2, item.ToString().Length - (item.ToString().IndexOf(":")+2)))
+                        {
+                            case "Люкс":
+                                carTypes.Add(CarType.Luxe);
+                                break;
+                            case "Купэ фирменное":
+                                carTypes.Add(CarType.CoupeFirm);
+                                break;
+                            case "Купэ":
+                                carTypes.Add(CarType.Coupe);
+                                break;
+                            case "Плацкарт фирменный":
+                                carTypes.Add(CarType.ReservedSeatFirm);
+                                break;
+                            case "Плацкарт":
+                                carTypes.Add(CarType.ReservedSeat);
+                                break;
+                            case "Сидя":
+                                carTypes.Add(CarType.Seat);
+                                break;
+                        }
+                    }
+                    SearchSettings.Instance.CarTypes = carTypes;
+                }
+                if (cmbBoxCarTypeReserve.SelectedItem != null)
+                {
+                    switch (cmbBoxCarTypeReserve.Text)
                     {
                         case "Люкс":
-                            carTypes.Add(CarType.Luxe);
+                            SearchSettings.Instance.ReservePriority = CarType.Luxe;
                             break;
                         case "Купэ фирменное":
-                            carTypes.Add(CarType.CoupeFirm);
+                            SearchSettings.Instance.ReservePriority = CarType.CoupeFirm;
                             break;
                         case "Купэ":
-                            carTypes.Add(CarType.Coupe);
+                            SearchSettings.Instance.ReservePriority = CarType.Coupe;
                             break;
                         case "Плацкарт фирменный":
-                            carTypes.Add(CarType.ReservedSeatFirm);
+                            SearchSettings.Instance.ReservePriority = CarType.ReservedSeatFirm;
                             break;
                         case "Плацкарт":
-                            carTypes.Add(CarType.ReservedSeat);
+                            SearchSettings.Instance.ReservePriority = CarType.ReservedSeat;
                             break;
                         case "Сидя":
-                            carTypes.Add(CarType.Seat);
+                            SearchSettings.Instance.ReservePriority = CarType.Seat;
                             break;
                     }
                 }
-                SearchSettings.Instance.CarTypes = carTypes;
-            }
-            if (cmbBoxCarTypeReserve.SelectedItem != null)
-            {
-                switch (cmbBoxCarTypeReserve.Text)
+                if (checkBoxReserve.IsChecked == true)
+                    SearchSettings.Instance.EnableReserve = true;
+                else
+                    SearchSettings.Instance.EnableReserve = false;
+                if (lstBoxPlaceType.SelectedItems != null)
                 {
-                    case "Люкс":
-                        SearchSettings.Instance.ReservePriority = CarType.Luxe;
-                        break;
-                    case "Купэ фирменное":
-                        SearchSettings.Instance.ReservePriority = CarType.CoupeFirm;
-                        break;
-                    case "Купэ":
-                        SearchSettings.Instance.ReservePriority = CarType.Coupe;
-                        break;
-                    case "Плацкарт фирменный":
-                        SearchSettings.Instance.ReservePriority = CarType.ReservedSeatFirm;
-                        break;
-                    case "Плацкарт":
-                        SearchSettings.Instance.ReservePriority = CarType.ReservedSeat;
-                        break;
-                    case "Сидя":
-                        SearchSettings.Instance.ReservePriority = CarType.Seat;
-                        break;
-                }
-            }
-            if (checkBoxReserve.IsChecked == true)
-                SearchSettings.Instance.EnableReserve = true;
-            else
-                SearchSettings.Instance.EnableReserve = false;
-            if (lstBoxPlaceType.SelectedItems != null)
-            {
-                List<PlaceType> placeTypes = new List<PlaceType>();
-                foreach (var item in lstBoxPlaceType.SelectedItems)
-                {
-                    switch(item.ToString())
+                    List<PlaceType> placeTypes = new List<PlaceType>();
+                    foreach (var item in lstBoxPlaceType.SelectedItems)
                     {
-                        case "Нижнее купе":
-                            placeTypes.Add(PlaceType.LowCoupe);
-                            break;
-                        case "Верхнее купе":
-                            placeTypes.Add(PlaceType.HighCoupe);
-                            break;
-                        case "Нижнее боковое":
-                            placeTypes.Add(PlaceType.LowSide);
-                            break;
-                        case "Верхнее боковое":
-                            placeTypes.Add(PlaceType.HighSide);
-                            break;
+                        switch (item.ToString().Substring(item.ToString().IndexOf(":") + 2, item.ToString().Length - (item.ToString().IndexOf(":") + 2)))
+                        {
+                            case "Нижнее купе":
+                                placeTypes.Add(PlaceType.LowCoupe);
+                                break;
+                            case "Верхнее купе":
+                                placeTypes.Add(PlaceType.HighCoupe);
+                                break;
+                            case "Нижнее боковое":
+                                placeTypes.Add(PlaceType.LowSide);
+                                break;
+                            case "Верхнее боковое":
+                                placeTypes.Add(PlaceType.HighSide);
+                                break;
+                        }
                     }
+                    SearchSettings.Instance.PlaceTypes = placeTypes;
                 }
-                SearchSettings.Instance.PlaceTypes = placeTypes;
+                if (tbCheckPeriod.Text != "")
+                    SearchSettings.Instance.CheckPeriod = Convert.ToInt32(tbCheckPeriod.Text);
+                if (lstBoxNotifyType.SelectedItems.Count > 0)
+                {
+                    if (lstBoxNotifyType.SelectedIndex == 0)
+                        SearchSettings.Instance.Notifier = new EmailHelper(Properties.Settings.Default.UserEmailPassword, Properties.Settings.Default.UserEmail, "Білети Укрзалізниця");
+                    else if (lstBoxNotifyType.SelectedIndex == 1)
+                        SearchSettings.Instance.Notifier = new VkontakteHelper();
+                }
             }
-            if (tbCheckPeriod.Text != "")
-                SearchSettings.Instance.CheckPeriod = Convert.ToInt32(tbCheckPeriod.Text);
-            if(lstBoxNotifyType.SelectedItems.Count > 0)
+            catch(Exception)
             {
-                if (lstBoxNotifyType.SelectedIndex == 0)
-                    SearchSettings.Instance.Notifier = new EmailHelper(Properties.Settings.Default.UserEmailPassword, Properties.Settings.Default.UserEmail, "Білети Укрзалізниця");
-                else if (lstBoxNotifyType.SelectedIndex == 1)
-                    SearchSettings.Instance.Notifier = new VkontakteHelper();
+                MessageBox.Show("Error in data!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

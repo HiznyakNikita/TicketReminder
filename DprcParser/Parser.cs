@@ -105,7 +105,7 @@ namespace DprcParser
             try
             {
                 string url = "http://dprc.gov.ua/auth.php";
-                string data = "USER_LOGIN=" + login + "USER_PASSWORD=" + password + "&USER_REMEMBER=Y&do_login=%D0%92%D0%BE%D0%B9%D1%82%D0%B8&back_url=%252Finvoice.php";
+                string data = "USER_LOGIN=" + login + "&USER_PASSWORD=" + password + "&USER_REMEMBER=Y&do_login=%D0%92%D0%BE%D0%B9%D1%82%D0%B8&back_url=%252Finvoice.php";
                 PostHttp(url, data);
             }
             catch(Exception)
@@ -252,11 +252,15 @@ namespace DprcParser
             int functionStringIndex = 0;
             CarInfo info = new CarInfo();
             if (nodeGuid2 == -1)
-                functionStringIndex = PageGeneral.DocumentNode.InnerText.IndexOf("function stip(a,b,c) {	show_trip_info_panel(a,(window.rw_tos!=-1?window.rw_tos:b),(window.rw_place!=-1?window.rw_place:c));");
+            {
+                functionStringIndex = PageGeneral.DocumentNode.InnerHtml.IndexOf("function stip(a,b,c) {");
+                string doc = PageGeneral.DocumentNode.InnerHtml.Substring(nodeGuid1 + 18 + trainNumberIdInList.ToString().Length, functionStringIndex - (nodeGuid1 + 18 + trainNumberIdInList.ToString().Length + 2));
+                info = JsonConvert.DeserializeObject<CarInfo>(doc);
+            }
             //getting info about html segment (need for form request string)
             if (nodeGuid2 != -1)
             {
-                string doc = PageGeneral.DocumentNode.InnerText.Substring(nodeGuid1 + 18 + trainNumberIdInList.ToString().Length, nodeGuid2 - (nodeGuid1 + 18 + trainNumberIdInList.ToString().Length + 2));
+                string doc = PageGeneral.DocumentNode.InnerHtml.Substring(nodeGuid1 + 18 + trainNumberIdInList.ToString().Length, nodeGuid2 - (nodeGuid1 + 18 + trainNumberIdInList.ToString().Length + 2));
                 info = JsonConvert.DeserializeObject<CarInfo>(doc);
             }
             return info;

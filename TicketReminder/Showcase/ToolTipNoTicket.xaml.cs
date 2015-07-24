@@ -31,6 +31,12 @@ namespace TicketReminder.Showcase
                 typeof(ToolTipNoTicket),
                 new FrameworkPropertyMetadata(""));
 
+        public static readonly DependencyProperty HeaderTextProperty =
+            DependencyProperty.Register("HeaderText",
+                typeof(string),
+                typeof(ToolTipNoTicket),
+                new FrameworkPropertyMetadata(""));
+
         /// <summary>
         /// A property wrapper for the <see cref="InfoTextProperty"/>
         /// dependency property:<br/>
@@ -40,6 +46,12 @@ namespace TicketReminder.Showcase
         {
             get { return (string)GetValue(InfoTextProperty); }
             set { SetValue(InfoTextProperty, value); }
+        }
+
+        public string HeaderText
+        {
+            get { return (string)GetValue(HeaderTextProperty); }
+            set { SetValue(HeaderTextProperty, value); }
         }
 
         #endregion

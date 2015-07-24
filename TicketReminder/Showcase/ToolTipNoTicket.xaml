@@ -82,6 +82,7 @@
             </Image.RenderTransform>
         </Image>
         <TextBlock
+      x:Name="tbHeader"      
       Margin="82,10,20,0"
       TextWrapping="Wrap"
       Height="32"
