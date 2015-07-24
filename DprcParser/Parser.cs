@@ -216,7 +216,7 @@ namespace DprcParser
                 train.Cars.Add(car);
                 if (isReserve && car.Type == reservePriority && !isAlreadyReserve)
                 {
-                    ReserveTicket(trainNumberIdInList, PageGeneral, Convert.ToInt32(node.Attributes["id"].ToString().Substring(5, node.Attributes["id"].Value.ToString().Length - 5)));
+                    ReserveTicket(trainNumberIdInList, PageGeneral, Convert.ToInt32(node.Attributes["id"].Value.ToString().Substring(6, node.Attributes["id"].Value.ToString().Length - 6)));
                     isAlreadyReserve = true;
                 }
             }
