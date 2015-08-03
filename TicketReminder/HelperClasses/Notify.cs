@@ -31,20 +31,25 @@ namespace TicketReminder.HelperClasses
         /// <param name="countTicket">Count tickets that have searched</param>
         /// <param name="animation"></param>
         /// <param name="timeout"></param>
-        public Notify(string headerNotify, string mainNotify, int countTicket,
+        public Notify(string headerNotify, List<MessageArgs> ListArgs,
             PopupAnimation animation = PopupAnimation.Slide, int? timeout = 5000)
         {
             HeaderNotify = headerNotify;
-            MainTextNotify = mainNotify;
-            CountTickets = countTicket;
-
+            foreach (var args in ListArgs)
+            {
+                MainTextNotify  = "You have new ticket!" + Environment.NewLine +
+                                        "From: " + args.From + " To " + args.To + Environment.NewLine +
+                                        "Date: " + args.Date + Environment.NewLine +
+                                        "Number place: " + args.PlacesCount + " | " +
+                                        "Train number: " + args.TrainNumber + Environment.NewLine;
+            }
             AnimationNotify = animation;
             Timeout = timeout;
         }
 
         public Notify() { }
 
-        public void ShowNotify(List<MessageArgs> ListArgs)
+        public void ShowNotify()
         {
             MainAppWindow win = MainAppWindow.Instance;
 
@@ -52,14 +57,6 @@ namespace TicketReminder.HelperClasses
             Sound sound = new Sound(Sound.Location);
             sound.PlaySound();
             Notification();
-            foreach (var args in ListArgs)
-            {
-                win.txtInfo.Text = "You have new ticket!" + Environment.NewLine +
-                                        "From: " + args.From + " To " + args.To + Environment.NewLine +
-                                        "Date: " + args.Date + Environment.NewLine +
-                                        "Number place: " + args.PlacesCount + " | " +
-                                        "Train number: " + args.TrainNumber + Environment.NewLine;
-            }
         }
 
         public void NoNotification()

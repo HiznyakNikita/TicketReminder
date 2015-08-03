@@ -32,6 +32,9 @@ namespace TicketReminder
             }
             catch (VkNet.Exception.VkApiAuthorizationException)
             { }
+            catch (VkNet.Exception.VkApiException)
+            { }
+            
         }
 
         private static string CreateMessage(List<MessageArgs> args)

@@ -19,7 +19,8 @@
              Visibility="{Binding ElementName=tbCheckPeriod, Path=Text.IsEmpty,
                           Converter={StaticResource BooleanToVisibilityConverter}}" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="162" Grid.Column="1" />
 
-        <ListBox x:Name="lstBoxCarType" BorderBrush="AliceBlue" SelectionMode="Multiple" Background="Transparent" Margin="92,15,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Height="150" Grid.ColumnSpan="2">
+        <ListBox x:Name="lstBoxCarType" BorderBrush="AliceBlue" 
+                 SelectionMode="Multiple" Background="Transparent" Margin="92,15,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136" Height="150" Grid.ColumnSpan="2">
             <ListBoxItem Content="Люкс"/>
             <ListBoxItem  Content="Купэ фирменное"/>
             <ListBoxItem  Content="Купэ"/>

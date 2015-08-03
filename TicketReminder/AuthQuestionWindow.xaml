@@ -134,11 +134,11 @@
                     Margin="253,171,0,0" VerticalAlignment="Top" Width="98" Height="26" Background="#FFECEDA8" Click="btnNextStep_Click"/>
 
             <Canvas Margin="40,81,65.2,86" x:Name="canvasSignIn" Visibility="Collapsed"> 
-                <TextBox x:Name="tbLogin" Text="nikita.ru96@mail.ru" 
+                <TextBox x:Name="tbLogin" Text="" 
                          HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" 
                          VerticalAlignment="Top" Width="186" Canvas.Left="80"/>
 
-                <PasswordBox x:Name="tbPass" Password="mpo5yy70" 
+                <PasswordBox x:Name="tbPass" Password="" 
                              HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" 
                              Width="186" Canvas.Left="80" Canvas.Top="31"/>
                 
@@ -152,7 +152,7 @@
             <Button x:Name="btnRegistration" Opacity="0" Content="Regist" 
                     HorizontalAlignment="Left" Margin="126,171,0,0" VerticalAlignment="Top" BorderBrush="#FFA8A8ED"
                     Width="98" Height="26" Background="#FFA8A8ED" Click="btnRegistration_Click" />
-            <!-- Registration window -->
+             <!--Registration window--> 
 
         </Grid>
     </Border>

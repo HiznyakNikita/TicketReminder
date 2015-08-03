@@ -99,6 +99,8 @@ namespace TicketReminder
 
         private void btnRegistration_Click(object sender, RoutedEventArgs e)
         {
+            //new MainAppWindow().Show();
+            //this.Close();
             RegisterBrowser registerBrowser = new RegisterBrowser();
             registerBrowser.ShowDialog();
         }

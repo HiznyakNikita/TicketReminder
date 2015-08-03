@@ -77,6 +77,7 @@ namespace TicketReminder.Showcase
         private void imgClose_MouseDown(object sender, MouseButtonEventArgs e)
         {
             //the tray icon assigned this attached property to simplify access
+            
             TaskbarIcon taskbarIcon = TaskbarIcon.GetParentTaskbarIcon(this);
             taskbarIcon.CloseBalloon();
         }

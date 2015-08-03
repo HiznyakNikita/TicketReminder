@@ -35,7 +35,7 @@
 
     <Grid>
 
-        <TextBlock Margin="154,155,46,45" Text="Train number ..."
+        <!--<TextBlock Margin="154,155,46,45" Text="Train number ..."
 			Foreground="Gray" FontSize="14"
 			Visibility="{Binding Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=cmbBoxTrainNumber}" />
 
@@ -45,7 +45,7 @@
 
         <TextBlock Margin="154,41,46,159" Text="Place departure ..."
 			Foreground="Gray" FontSize="14"
-			Visibility="{Binding Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=cmbBoxPointFrom}" />
+			Visibility="{Binding Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=cmbBoxPointFrom}" />-->
 
 
         <Button x:Name="btnSearch" Content="Поиск" HorizontalAlignment="Left" Margin="215,188,0,0" VerticalAlignment="Top" Width="75" Click="btnSearch_Click"/>

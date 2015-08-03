@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Леся\Documents\Visual Studio 2013\Projects\TicketReminder\TicketReminder\App.xaml
-13268887065
+152072259980
 
-33-654971909
-26-2124415854
-AuthQuestionWindow.xaml;MainWindow.xaml;Resources\Icons.xaml;SearchParametersWindow.xaml;Showcase\Common.xaml;Showcase\MetroMessageBox.xaml;Showcase\TicketNotify.xaml;Showcase\ToolTipNoTicket.xaml;Windows\HelpWindow.xaml;Windows\MainAppWindow.xaml;Windows\SettingsAppWindow.xaml;SettingsWindow.xaml;Showcase\UserNotification.xaml;
+351256485329
+21533567463
+AuthQuestionWindow.xaml;MainWindow.xaml;Resources\Icons.xaml;SearchParametersWindow.xaml;Showcase\Common.xaml;Showcase\ForecastWeatherControl.xaml;Showcase\MetroMessageBox.xaml;Showcase\TicketNotify.xaml;Showcase\ToolTipNoTicket.xaml;Showcase\WeatherControl.xaml;Windows\HelpWindow.xaml;Windows\MainAppWindow.xaml;Windows\SettingsAppWindow.xaml;SettingsWindow.xaml;Showcase\UserNotification.xaml;
 
 True
 

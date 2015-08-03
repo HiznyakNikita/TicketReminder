@@ -122,7 +122,7 @@
         <TextBlock x:Name="MainText" Margin="82,52,10,0"
                    VerticalAlignment="Top"
                    Foreground="#FF006FCB"
-                   FontSize="14"                   
+                   FontSize="10"                   
                    TextWrapping="Wrap">
             <Run Text="This is a user control. The animation uses the attached " />
             <Run FontStyle="Italic"
